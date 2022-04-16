@@ -21,6 +21,7 @@ import { SwitchBannerComponent } from './views/switch/switch-banner/switch-banne
 import { SwitchLinkBannerComponent } from './views/switch/switch-link-banner/switch-link-banner.component';
 import { GamesComponent } from './views/games/games.component';
 import { FilterBarComponent } from './shared/filter-bar/filter-bar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -49,7 +50,8 @@ import { FilterBarComponent } from './shared/filter-bar/filter-bar.component';
     FilterBarComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
