@@ -19,6 +19,8 @@ import { BannerLinkComponent } from './views/homepage/banner-link/banner-link.co
 import { ArticlesCardComponent } from './shared/articles-card/articles-card.component';
 import { SwitchBannerComponent } from './views/switch/switch-banner/switch-banner.component';
 import { SwitchLinkBannerComponent } from './views/switch/switch-link-banner/switch-link-banner.component';
+import { GamesComponent } from './views/games/games.component';
+import { FilterBarComponent } from './shared/filter-bar/filter-bar.component';
 
 
 
@@ -43,6 +45,8 @@ import { SwitchLinkBannerComponent } from './views/switch/switch-link-banner/swi
     ArticlesCardComponent,
     SwitchBannerComponent,
     SwitchLinkBannerComponent,
+    GamesComponent,
+    FilterBarComponent,
   ],
   imports: [
     BrowserModule
