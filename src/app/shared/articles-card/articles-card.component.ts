@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-articles-card',
+  selector: 'nint-articles-card',
   templateUrl: './articles-card.component.html',
   styleUrls: ['./articles-card.component.css']
 })

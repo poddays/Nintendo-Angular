@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-login-bar',
+  selector: 'nint-login-bar',
   templateUrl: './login-bar.component.html',
   styleUrls: ['./login-bar.component.css']
 })
