@@ -1,11 +1,12 @@
 
 .container-news{
     width: 261.99px;
-    height: 366.9px;
-    display: flex;
-    flex-direction: column;
-    color: var(--main-black);
+    height: 366.95px;
+    display: grid;
+    grid-template-rows: 0fr 0.4fr 0.2fr 0.1fr;
     gap: 1%;
+    margin-bottom: 20px;
+    color: var(--main-black);
     
     
 }
