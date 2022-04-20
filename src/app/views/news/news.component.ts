@@ -1,13 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-news',
+  selector: 'nint-news',
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor() { 
+
+
+  }
 
   ngOnInit(): void {
   }

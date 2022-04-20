@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --nint-red:#e60012;
+    --nint-blue: #3946a0;
+    --main-black:#242424;
+    --grey: #484848;
+    --light-grey:#727272;
+
+}
+ 

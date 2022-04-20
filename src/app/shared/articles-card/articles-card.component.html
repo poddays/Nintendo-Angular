@@ -1,17 +1,27 @@
-<div class="container-news ">
-    <div class="img-news">
-        <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_auto/c_scale,w_800/v1/ncom/en_US/articles/2022/nintendo-switch-online-expansion-pack-mario-golf-is-now-available/1920x1080_NSO_april?_a=AJADJWI0" alt="">
+<div class="grid2x2">
+    <div class="container-news big " *ngFor="let card of newsCardEvidence">
+        <div class="img-news"> <img src="{{card.image}}" alt="NewsNintendo"> </div>
+        
+        <div class="date-news">{{card.date | date: 'dd/MM/yy'}}</div>
+
+        <div class="title-news"> <h3>{{card.titolo}}</h3> </div>
+
+        <div class="description-news"> <p>{{card.description}}</p> </div>
+            
+        <div class="read-more"> <a href="#"> <h6>{{card.readMore}}</h6> </a></div>
     </div>
+</div>
+<div class="grid4x4">
 
-    <div class="date-news">04/03/20</div>
+    <div class="container-news " *ngFor="let card of newsCard">
+        <div class="img-news"> <img src="{{card.image}}" alt="NewsNintendo"> </div>
+        
+        <div class="date-news">{{card.date | date: 'dd/MM/yy'}}</div>
 
-    <div class="title-news"><h3>Titolotto</h3></div>
+        <div class="title-news"> <h3>{{card.titolo}}</h3> </div>
 
-    <div class="description-news">
-        <p>Descrizione generica nuovo gioco nintendo, compralo ci servono soldi per fare altri giochi per fare altri soldi</p>
-    </div>
-
-    <div class="read-more">
-        <a href="#"><h6>Read More</h6></a>
+        <div class="description-news"> <p>{{card.description}}</p> </div>
+            
+        <div class="read-more"> <a href="#"> <h6>{{card.readMore}}</h6> </a></div>
     </div>
 </div>
