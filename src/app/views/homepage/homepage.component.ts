@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ArticlesCard } from "../../models/interface-article-card";
 
 @Component({
   selector: 'app-homepage',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-
+  newsCard!: ArticlesCard[];
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
