@@ -1,5 +1,5 @@
-<div class="grid2x2">
-    <div class="container-news big " *ngFor="let card of newsCardEvidence">
+
+    <div class="container-news" [ngClass]="isBig ? 'big' : ''">
         <div class="img-news"> <img src="{{card.image}}" alt="NewsNintendo"> </div>
         
         <div class="date-news">{{card.date | date: 'dd/MM/yy'}}</div>
@@ -10,18 +10,6 @@
             
         <div class="read-more"> <a href="#"> <h6>{{card.readMore}}</h6> </a></div>
     </div>
-</div>
-<div class="grid4x4">
 
-    <div class="container-news " *ngFor="let card of newsCard">
-        <div class="img-news"> <img src="{{card.image}}" alt="NewsNintendo"> </div>
-        
-        <div class="date-news">{{card.date | date: 'dd/MM/yy'}}</div>
 
-        <div class="title-news"> <h3>{{card.titolo}}</h3> </div>
 
-        <div class="description-news"> <p>{{card.description}}</p> </div>
-            
-        <div class="read-more"> <a href="#"> <h6>{{card.readMore}}</h6> </a></div>
-    </div>
-</div>
