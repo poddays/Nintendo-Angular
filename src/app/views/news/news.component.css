@@ -8,7 +8,7 @@
     display: flex;
     margin-bottom: 30px;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
 }
 .filter{
     margin-bottom: 80px;
@@ -21,10 +21,10 @@ path{
   
     width: 100%;
 }
-
 .grid2x2{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-columns:1fr 1fr;
 }
 .grid4x4{
     display: grid;
