@@ -1,22 +1,36 @@
 *{
     text-decoration: none;
 }
+
+.character-content{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
 a{
-    max-width: 262px;
-    max-height: 262px;
-    overflow:hidden;
+    display: flex;
+    justify-content: center;
     position: relative;    
 }
 
 
-h4{
+.h4-character{
     color: var(--light-grey);
     font-size: 1.3rem;
+    margin-top: 10px;
 }
 
 .bk-image{
     z-index: 0;
     position: absolute;
+}
+
+.character-container{
+    border-radius: 5px;
+    width: 262px;
+    overflow: hidden;
+    position: relative;
 }
 
 .character-image{
@@ -31,6 +45,6 @@ h4{
 }
 
 a:hover .bk-image img{
-    transition: 0.5s;
-    transform: scale(0.9,0.9);
+    transition: 0.4s;
+    width: 262px;
 }
