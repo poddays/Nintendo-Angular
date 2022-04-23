@@ -15,8 +15,8 @@ a{
 }
 
 
-.h4-character{
-    color: var(--light-grey);
+.h5-character{
+    color: var(--grey);
     font-size: 1.3rem;
     margin-top: 10px;
 }
