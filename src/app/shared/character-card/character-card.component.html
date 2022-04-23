@@ -1,1 +1,11 @@
-<p>character-card works!</p>
+
+<a href="#" *ngFor="let character of characters" >
+    
+    <div class="bk-image">
+        <img src="{{ character.background }}" alt="" style="max-width: 300px">
+    </div>
+    <div class="character-image">
+        <img src="{{ character.img }}" alt="" style="max-width: 262px">
+    </div>    
+  
+</a>

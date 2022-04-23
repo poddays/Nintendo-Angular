@@ -1,0 +1,36 @@
+*{
+    text-decoration: none;
+}
+a{
+    max-width: 262px;
+    max-height: 262px;
+    overflow:hidden;
+    position: relative;    
+}
+
+
+h4{
+    color: var(--light-grey);
+    font-size: 1.3rem;
+}
+
+.bk-image{
+    z-index: 0;
+    position: absolute;
+}
+
+.character-image{
+    z-index: 0;
+}
+
+
+.character-image img:hover{
+    transition: 0.5s;
+    transform: scale(1.1,1.1);
+    overflow: hidden;
+}
+
+a:hover .bk-image img{
+    transition: 0.5s;
+    transform: scale(0.9,0.9);
+}
