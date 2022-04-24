@@ -1,0 +1,124 @@
+*{
+    text-decoration: none;    
+    font-weight: bold;
+}
+
+.log-in-container{
+    width: 320px;
+    height: 100vw;
+    background-color: #EFEFEF;
+    padding: 20px;
+}
+
+.log-in-content{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h5-login{
+    margin-bottom: 40px;
+    color: var(--grey);
+}
+
+.first-section{
+    background-color: white;
+    padding: 18px;
+    color: var(--grey);
+}
+
+.free-account span{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.log-in-btn{
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    
+}
+
+.log-in-btn .log-in{
+    border: none;
+    width: 100%;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;   
+}
+
+
+
+.log-in-btn .sign-up{
+    border: none;
+    width: 100%;    
+    margin-bottom: 20px;
+    color: red;
+    
+}
+
+.log-in-footer{
+    padding: 5px;
+    width: 100%;
+}
+
+.log-in-footer .first-child{
+    margin-bottom: 20px;
+    border: 1px solid #DADADA;
+}
+
+.order-status{    
+    padding: 10px 20px;
+    background-color: white;   
+}
+
+.order-status a{
+    display: flex;
+    align-items: center;
+    color: #484848;
+}
+
+.order-status .svg-simbol{
+    color: red;
+    margin-right: 10px;
+}
+
+.button-footer{
+    padding: 10px 20px;
+    background-color: white;
+
+}
+
+.button-footer a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-footer .svg-simbol{
+    color: red;
+}
+
+.button-footer span{    
+    margin-left: 10px;
+    color: var(--grey);
+}
+
+.second-child{
+    border: 1px solid #DADADA;
+}
+
+.third-child{
+    border-right: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+}
+
+.fourth-child{
+    border: 1px solid #DADADA;
+}
+
+.svg-button{    
+    margin-bottom: 3px;
+    color: var(--grey);
+}
