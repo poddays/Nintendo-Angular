@@ -1,0 +1,83 @@
+
+nav{
+    z-index: 200px;
+    background-color: white;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+nav{
+    width: 100%;
+    height: 43.98px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c9c9c9;
+    z-index: 2;
+    
+}
+h3{
+    font-size: 13px;
+    font-family: nint-bold;
+    margin-top: 6px;
+    
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.link-row{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: var(--grey);
+
+}
+.link-row:hover{
+    transition: 0.2s;
+    color: var(--nint-red);
+}
+.freccia-su{
+    transition: 0.2s;
+    transform: rotate(180deg);
+    
+}
+ .link-row-red{
+    color:  var(--nint-red);
+}
+
+.freccia-giu{
+    transition: 0.2s;
+    transform: rotate(0deg);
+    
+}
+
+
+.tendina{
+    background-color: white;
+    position: relative;
+    animation: slide 0.3s;
+    height: 200px;
+    z-index: -1;
+}
+
+@keyframes slide{
+0%{
+bottom: 200px;
+}
+100%{
+bottom: 0px;
+}
+
+
+
+}
+
+
+

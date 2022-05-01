@@ -22,6 +22,10 @@ import { SwitchLinkBannerComponent } from './views/switch/components/switch-link
 import { GamesComponent } from './views/games/games.component';
 import { FilterBarComponent } from './shared/filter-bar/filter-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DropMenuComponent } from './core/navbar/components/drop-menu/drop-menu.component';
+import { CustomPropDirective } from './custom-prop.directive';
+import { ClickOutsideDirective } from './clickOutside.directive';
+
 
 
 
@@ -48,6 +52,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SwitchLinkBannerComponent,
     GamesComponent,
     FilterBarComponent,
+    DropMenuComponent,
+    CustomPropDirective,
+    ClickOutsideDirective
   ],
   imports: [
     BrowserModule,
