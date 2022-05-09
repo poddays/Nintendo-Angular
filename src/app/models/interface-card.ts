@@ -23,5 +23,6 @@ new = "New!",
 freeDemo = "Free demo",
 dlc = "DLC bundle",
 preOrder = "Pre-order now",
-free= "Free download"
+free= "Free download",
+sale= "Now on sale"
 }

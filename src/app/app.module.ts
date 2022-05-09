@@ -14,7 +14,6 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { LoginBarComponent } from './core/login-bar/login-bar.component';
-import { CaroselloComponent } from './views/homepage/components/carosello/carosello.component';
 import { BannerLinkComponent } from './views/homepage/components/banner-link/banner-link.component';
 import { ArticlesCardComponent } from './shared/articles-card/articles-card.component';
 import { SwitchBannerComponent } from './views/switch/components/switch-banner/switch-banner.component';
@@ -25,6 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DropMenuComponent } from './core/navbar/components/drop-menu/drop-menu.component';
 import { CustomPropDirective } from './custom-prop.directive';
 import { ClickOutsideDirective } from './clickOutside.directive';
+import { CaroselloComponent } from './shared/carosello/carosello.component';
 
 
 
@@ -45,7 +45,6 @@ import { ClickOutsideDirective } from './clickOutside.directive';
     FooterComponent,
     NavbarComponent,
     LoginBarComponent,
-    CaroselloComponent,
     BannerLinkComponent,
     ArticlesCardComponent,
     SwitchBannerComponent,
@@ -54,7 +53,9 @@ import { ClickOutsideDirective } from './clickOutside.directive';
     FilterBarComponent,
     DropMenuComponent,
     CustomPropDirective,
-    ClickOutsideDirective
+    ClickOutsideDirective,
+    CaroselloComponent
+   
   ],
   imports: [
     BrowserModule,
