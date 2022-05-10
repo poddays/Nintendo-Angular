@@ -11,10 +11,7 @@ import { IButton } from './button';
 export class ButtonComponent implements OnInit {
 
  
-  button : IButton = {
-    text: 'Shop Now',
-
-  }
+ 
   
 
   constructor() { 

@@ -47,6 +47,7 @@ input:hover::placeholder {
 }
 
 header {
+  position: sticky;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -98,7 +99,7 @@ input:active {
   padding: 0;
   width: 100%;
   height: 3em;
-
+  z-index: 1000;
 
   background: white;
 
@@ -167,7 +168,7 @@ input:checked~label>svg {
   position: absolute;
   min-width: 100%;
   border: transparent;
-
+  z-index: 1000;
 
 }
 
@@ -192,15 +193,55 @@ input:checked~label>svg {
 
 /**/
 #mega-menu {
-  background-color: rgb(71, 66, 66);
-  z-index: 1000;
+  background-color: white;
+
   height: 300px;
   width: 100%;
   position: fixed;
-  color: white;
-
+  color: rgb(55, 51, 51);
+  margin-left: 5rem;
+  z-index: 1;
 }
 
 #cross {
   margin-top: 1em;
+}
+
+#mega-menu>ul>li {
+  list-style-type: none;
+  color: rgb(243, 25, 25);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+#mega-menu>ul>li:hover {
+  color: brown;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(66, 60, 60);
+}
+
+@media (max-width:1000px) {
+
+  .buttons,
+  .double-border,
+  .social {
+    display: none;
+  }
+
+  header {
+    background-color: rgb(226, 45, 45);
+    ;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+
 }
