@@ -10,7 +10,7 @@ import { ICard,category,availability } from '../../models/interface-card';
 })
 export class CardComponent implements OnInit {
   @Input() card!: ICard;
-
+  @Input() smallCard?:boolean;
   constructor() {
   
 

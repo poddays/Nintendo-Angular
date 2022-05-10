@@ -8,7 +8,7 @@ import { ICard, category,availability  } from '../app/models/interface-card';
 })
 export class AppComponent {
   title = 'nintendo';
-  
+  smallCard:boolean = true;
 
 constructor(){}
 

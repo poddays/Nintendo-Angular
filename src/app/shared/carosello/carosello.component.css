@@ -8,29 +8,35 @@
     gap:20px;
     height:400.36px;
     width: 100%;
+  
 }
 .hider{
     position: absolute;
     background-color: white;
     height: 120%;
-    width: 400px;
+    width: 448px;
     z-index: 2;
+ 
+    
 }
     .hider.right{
         right: 0;
     }
     .hider.left{
         left: 0;
+       
     }
 
 #content{
     display: flex;
     flex-direction: row;
-    margin-left: 900px;
+    position: absolute;
+    left: 480px;
     gap: 25px;
     z-index: 0;
-    
+  
 }
+
 
 .hider.freccia.left{
     position: absolute;
@@ -75,6 +81,4 @@
         transition: 0.3s;
     }
 
-.freccia.right:active{
-   background-color: blue;
-}
+    

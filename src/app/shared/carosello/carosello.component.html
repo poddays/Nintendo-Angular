@@ -1,28 +1,22 @@
 
-
-
-
     <div class="carosello">
         <div class="hider left">
             <button class="freccia left" (click)="caroselLeft()">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="36" role="presentation" alt="" data-testid="ChevronLeftIcon" size="36" ><path fill-rule="evenodd" clip-rule="evenodd" d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"></path></svg>
             </button>
         </div>
-        
         <div id="content">
-            <div class="cards" *ngFor="let card of arrCard">
-                <nint-card [card]="card"></nint-card>
+            <div class="cards" *ngFor="let card of arrCard ">
+                <nint-card  [card]="card" [smallCard]="smallCard"></nint-card>
             </div>
+            <button>See full list</button>
         </div>
-       
-        <div class="hider right">
-            <button class="freccia right" (click)="caroselRight()">
+
+        <div class="hider right" *ngIf="!smallCard">
+            <button class="freccia right" (click)="caroselRight()" >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="36" role="presentation" alt="" data-testid="ChevronRightIcon" size="36" ><path fill-rule="evenodd" clip-rule="evenodd" d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"></path></svg>
             </button>
         </div>
-
-       
-        
-
-
     </div>
+
+   

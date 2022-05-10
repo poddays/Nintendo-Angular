@@ -59,6 +59,40 @@ export const cardsList: ICard[] = [
         category: category.switch,
         topBar: availability.now,
       },
+      {
+        image: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/t/triangle-strategy-switch/hero",
+        title: "TRIANGLE STRATEGY™",
+        link: 'https://www.nintendo.com/store/products/triangle-strategy-switch/',
+        price:59.99,
+        category: category.switch,
+        topBar: availability.freeDemo,
+      },
+      {
+        image: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/c/crunchyroll-switch/hero",
+        title: "Crunchyroll",
+        link: 'https://www.nintendo.com/store/products/crunchyroll-switch/',
+        price:0,
+        category: category.switch,
+        topBar: availability.now,
+      },
+    
+      {
+        image: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/p/pokemon-legends-arceus-switch/hero",
+        title: "Pokémon™ Legends: Arceus",
+        link: 'https://www.nintendo.com/store/products/pokemon-legends-arceus-switch/',
+        price:59.99,
+        category: category.switch,
+        topBar: availability.now,
+      },
+      {
+        image: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_300/v1/ncom/en_US/games/switch/m/mario-party-superstars-switch/hero",
+        title: "Mario Party™ Superstars",
+        link: 'https://www.nintendo.com/store/products/mario-party-superstars-switch/',
+        price:59.99,
+        category: category.switch,
+        topBar: availability.now,
+      },
+    
     ]
-
+      
   
