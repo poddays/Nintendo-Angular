@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ArticlesCard } from "../../models/interface-article-card";
-import { newsCard } from "../../models/newsList";
+import { newsCard } from "../../models/newList";
 @Component({
   selector: 'nint-news',
   templateUrl: './news.component.html',

@@ -27,6 +27,8 @@ import { ClickOutsideDirective } from './clickOutside.directive';
 import { CaroselloComponent } from './shared/carosello/carosello.component';
 import { StoreCardComponent } from './views/store/components/store-card/store-card.component';
 import { BigCardStoreComponent } from './views/store/components/big-card-store/big-card-store.component';
+import { HomepageNewsComponent } from './views/homepage/components/homepage-news/homepage-news.component';
+
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { BigCardStoreComponent } from './views/store/components/big-card-store/b
     CaroselloComponent,
     StoreCardComponent,
     BigCardStoreComponent,
-    FilterBarComponent    
+    FilterBarComponent,
+    HomepageNewsComponent,
+    
 
   ],
   imports: [

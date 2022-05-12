@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ArticlesCard } from "../../models/interface-article-card";
+
 
 @Component({
   selector: 'app-homepage',
@@ -7,8 +7,14 @@ import { ArticlesCard } from "../../models/interface-article-card";
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-  newsCard!: ArticlesCard[];
+
+ 
   smallCard:boolean = true;
+
+
+  
+  
+  constructor() { }
 
 
   ngOnInit(): void {

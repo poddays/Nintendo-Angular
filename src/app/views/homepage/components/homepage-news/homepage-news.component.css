@@ -1,0 +1,32 @@
+.container-news{
+   
+    display: flex;
+    flex-direction: column;
+    color: var(--grey); 
+}
+.title-page{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    
+}
+.filter{
+    margin-bottom: 80px;
+}
+
+h2{
+    font-size: 21px;
+}
+path{
+
+    width: 100%;
+}
+.grid2x2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid4x4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
