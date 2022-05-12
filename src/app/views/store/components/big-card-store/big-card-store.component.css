@@ -1,0 +1,30 @@
+.mario-day-card {
+    z-index: 1;
+    margin: 0px 231.5px 32px;
+  }
+  .mario-day-card h2 {
+    font-size: 21px;
+    color: #484848;
+  }
+  
+.mario-day-card .mario-img {
+    width: 949.34px;
+    height: 474.67px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  
+  .mario-day-card .shop-now {
+    width: 949.34px;
+    height: 80px;
+    position: relative;
+    bottom: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: -2px 3px 8px lightgray;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }

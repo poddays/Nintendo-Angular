@@ -14,7 +14,10 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { LoginBarComponent } from './core/login-bar/login-bar.component';
+<<<<<<< HEAD
 import { CaroselloComponent } from './views/homepage/components/carosello/carosello.component';
+=======
+>>>>>>> giovanni
 import { BannerLinkComponent } from './views/homepage/components/banner-link/banner-link.component';
 import { ArticlesCardComponent } from './shared/articles-card/articles-card.component';
 import { SwitchBannerComponent } from './views/switch/components/switch-banner/switch-banner.component';
@@ -22,6 +25,13 @@ import { SwitchLinkBannerComponent } from './views/switch/components/switch-link
 import { GamesComponent } from './views/games/games.component';
 import { FilterBarComponent } from './shared/filter-bar/filter-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DropMenuComponent } from './core/navbar/components/drop-menu/drop-menu.component';
+import { CustomPropDirective } from './custom-prop.directive';
+import { ClickOutsideDirective } from './clickOutside.directive';
+import { CaroselloComponent } from './shared/carosello/carosello.component';
+import { StoreCardComponent } from './views/store/components/store-card/store-card.component';
+import { BigCardStoreComponent } from './views/store/components/big-card-store/big-card-store.component';
+
 
 
 
@@ -41,13 +51,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     NavbarComponent,
     LoginBarComponent,
-    CaroselloComponent,
     BannerLinkComponent,
     ArticlesCardComponent,
     SwitchBannerComponent,
     SwitchLinkBannerComponent,
     GamesComponent,
     FilterBarComponent,
+    DropMenuComponent,
+    CustomPropDirective,
+    ClickOutsideDirective,
+    CaroselloComponent,
+    StoreCardComponent,
+    BigCardStoreComponent
+   
   ],
   imports: [
     BrowserModule,

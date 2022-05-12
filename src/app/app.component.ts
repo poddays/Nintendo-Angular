@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
+import { ICard, category,availability  } from '../app/models/interface-card';
 
 @Component({
   selector: 'nint-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nintendo';
+  smallCard:boolean = true;
+
+constructor(){}
+
 }
+
+
+
+

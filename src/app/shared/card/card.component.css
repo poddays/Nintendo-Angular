@@ -1,0 +1,250 @@
+a{
+    color: var(--nint-black);
+}
+
+
+.nint-card{
+    width: 259.77px;
+    height:396.36px;
+   display: flex;
+    
+}
+
+.card-container{
+    height: 100%;
+    border-width: 0.5px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgb(190, 190, 190), transparent) 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+    .top-section a{
+        
+        color: var(--nint-black);
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    .card-container:hover .top-section{
+        color: var(--nint-red);
+    }
+    
+
+
+.img{
+    width: 100%;
+    height: 146.26px;   
+    
+}
+    /* Se non c'è la Topbar l'immagine avra il border radius */
+    .borderImg{
+        border-radius: 3px 3px 0px 0px;
+    }
+
+.title{
+    padding-top: 16px;
+    text-align: left;
+}
+
+
+    .category h3{
+        color: var(--light-grey);
+        font-size: 14px;
+        font-family: nint-light;
+    }
+    .category h3::before{
+        content: '';
+        display: inline-block;
+        background-color: var(--nint-red);
+        height: 17px;
+        width: 3px;
+        margin-right: 5px;
+        position: relative;
+        top: 4px;
+    }
+        .hardware h3::before{
+            background-color:grey;
+        }
+
+
+.rowss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+svg{
+    height: 48px;
+    width: 48px;
+}
+
+.main-margin{
+    margin: 0px 16px 0 16px;
+}
+
+    .heart{
+        color: var(--nint-red);
+        stroke-width: 3px;
+    }
+    .spark{
+        color: var(--nint-darkRed);
+        stroke-width: 0px;
+       transform-origin: center;
+    }
+        .heart:hover{
+            color: var(--nint-darkRed);
+           
+        }
+        .heart:hover .spark{
+          
+            animation: sparkAnimation 0.8s ;
+        }
+        @keyframes sparkAnimation{
+            0%{
+                transform: scale(0%);
+                stroke-width:3px
+            }
+           10%{
+               transform: scale(90%);
+             
+           }
+          
+            100%{
+         
+                transform: scale(100%);
+                
+            }
+        }
+
+        /* Quando il vuore viene cliccato */
+        .heartFilled {
+           fill: var(--nint-red);
+        }
+        .heartFilled:hover {
+            fill: var(--nint-darkRed);
+            stroke: var(--nint-darkRed);
+        }
+
+        .heartNotFilled {
+           fill: white;
+        }
+
+
+
+.top-bar{
+    height: 26px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--nint-red);
+    border-radius: 3px 3px 0px 0px ;
+}
+.imgBar{
+    animation: out 0.3s forwards ;
+}
+.card-container:hover .imgBar{
+animation: in 0.3s ease-in-out forwards;
+}
+    @keyframes in {
+        from   { transform: translateY(0px); }
+        to { transform: translateY(-22px);}
+    }
+    @keyframes out {
+        0%   { transform: translateY(-22px); }
+        100% { transform: translateY(0px); }
+    }
+
+
+
+/* topBar NgCLass */
+.none{ 
+    background-color: transparent;
+}
+.blue{
+    background-color:rgb(0, 97, 251);
+}
+.purple{
+    background-color: rgb(111, 0, 203);
+}
+
+
+
+/* Setup card-small  */
+.card-small .nint-card{
+    height: 262.47px;
+
+}
+    .card-small .top-bar{
+        display: none;
+    }
+    .card-small .price{
+        display: none;
+    }
+    .card-small .heart{
+        display: none;
+    }
+    .card-small .category{
+        margin-bottom: 20px;
+    }
+
+
+    /* Setup Sale */
+.sale{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+   .sale .price{
+      font-size: 12px;
+       color: var(--light-grey);
+       text-decoration: line-through;
+   }
+
+
+   .saleTag{
+       display: flex;
+       position: relative;
+       right: 10px;
+       bottom: 20px;
+
+   }
+   .saleTag svg{
+       fill: var(--nint-red);
+       height: 20px;
+       width: 20px;
+       
+       
+   }
+   .saleTag .newPriceContainer{
+      background-color:var(--nint-red);
+       height: 20px;
+       width: 28.77px;
+        position: relative;
+        right: 7px;  
+        text-align: center;
+   }
+   .saleTag h3{
+       color: white;
+       font-size:12px;
+       position: relative;
+       top: 3px;
+       right: 2px;
+   }
+
+   .wishListFormat{
+       height: 200px;
+       width: 400px;
+   }
