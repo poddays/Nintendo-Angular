@@ -25,6 +25,8 @@ import { DropMenuComponent } from './core/navbar/components/drop-menu/drop-menu.
 import { CustomPropDirective } from './custom-prop.directive';
 import { ClickOutsideDirective } from './clickOutside.directive';
 import { CaroselloComponent } from './shared/carosello/carosello.component';
+import { StoreCardComponent } from './views/store/components/store-card/store-card.component';
+import { BigCardStoreComponent } from './views/store/components/big-card-store/big-card-store.component';
 
 
 
@@ -54,7 +56,9 @@ import { CaroselloComponent } from './shared/carosello/carosello.component';
     DropMenuComponent,
     CustomPropDirective,
     ClickOutsideDirective,
-    CaroselloComponent
+    CaroselloComponent,
+    StoreCardComponent,
+    BigCardStoreComponent
    
   ],
   imports: [
