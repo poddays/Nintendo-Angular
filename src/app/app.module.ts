@@ -32,6 +32,8 @@ import { BigCardStoreComponent } from './views/store/components/big-card-store/b
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,14 +55,16 @@ import { BigCardStoreComponent } from './views/store/components/big-card-store/b
     SwitchBannerComponent,
     SwitchLinkBannerComponent,
     GamesComponent,
+
     FilterBarComponent,
     DropMenuComponent,
     CustomPropDirective,
     ClickOutsideDirective,
     CaroselloComponent,
     StoreCardComponent,
-    BigCardStoreComponent
-   
+    BigCardStoreComponent,
+    FilterBarComponent    
+
   ],
   imports: [
     BrowserModule,
