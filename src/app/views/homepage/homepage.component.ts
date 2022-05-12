@@ -8,7 +8,8 @@ import { ArticlesCard } from "../../models/interface-article-card";
 })
 export class HomepageComponent implements OnInit {
   newsCard!: ArticlesCard[];
-  constructor() { }
+  smallCard:boolean = true;
+
 
   ngOnInit(): void {
     

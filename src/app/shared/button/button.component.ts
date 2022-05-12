@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { IButton } from './button';
+
+
 
 @Component({
   selector: 'nint-button',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  constructor() { }
+ 
+ 
+  
+
+  constructor() { 
+
+  }
 
   ngOnInit(): void {
   }

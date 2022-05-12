@@ -1,16 +1,11 @@
-<p>homepage works!</p>
+<nint-header></nint-header>
 
 
 
-<!-- News Section -->
-<div class="grid2x2">
-    <div *ngFor="let singleCard of newsCard.slice(0,2)">
-        <nint-articles-card [card]="singleCard" [isBig]="true"></nint-articles-card>
-    </div>
+<div class="container-carosel">
+   
+   <nint-articles-card></nint-articles-card>
 </div>
 
-<div class="grid4x4">
-    <div *ngFor="let singleCard of newsCard.slice(2,6)">
-        <nint-articles-card [card]="singleCard" ></nint-articles-card>
-    </div>
-</div>
+
+<nint-footer></nint-footer>
