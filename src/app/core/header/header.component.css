@@ -1,0 +1,247 @@
+.logo {
+  background-color: rgb(226, 45, 45);
+  width: 20%;
+  height: 60px;
+
+  margin-top: 0;
+  cursor: pointer;
+
+}
+
+.nint-logo {
+  height: 80%;
+  width: 80%;
+  color: white;
+  margin: 0.3em 0.5em;
+}
+
+.buttons {
+  align-self: center;
+  display: flex;
+  font-size: 0.9em;
+  border-bottom: solid 1px rgb(19, 17, 17);
+  height: 3.1em;
+  cursor: pointer;
+}
+
+
+
+.buttons:hover {
+  border-bottom: solid 1px red;
+
+}
+
+.buttons:hover>button>svg {
+  color: red;
+}
+
+input:hover::placeholder {
+  color: red;
+}
+
+
+.mi-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+header {
+  position: sticky;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid rgb(212, 210, 210) 1px;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: black;
+
+}
+
+input {
+
+  width: 15rem;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input:hover {
+  color: red;
+}
+
+input:active {
+  border: none;
+  outline: none;
+}
+
+.social {
+  display: flex;
+  gap: 1.5em;
+
+}
+
+.social>span {
+  cursor: pointer;
+}
+
+.social>span:hover {
+  color: red;
+}
+
+/*dropdown*/
+#menu {
+
+  padding: 0;
+  width: 100%;
+  height: 3em;
+  z-index: 1000;
+
+  background: white;
+
+  border: transparent;
+  cursor: pointer;
+}
+
+#menu>li {
+  text-align: left;
+  list-style-type: none;
+  position: relative;
+
+}
+
+label {
+  color: rgb(19, 17, 17);
+  position: relative;
+  display: block;
+
+  line-height: 3.1em;
+
+  cursor: pointer;
+}
+
+
+
+label:hover {
+
+  color: red;
+  font-weight: 600;
+}
+
+
+
+
+#check01 {
+  display: none;
+
+}
+
+
+input:checked~ul.submenu {
+  max-height: 300px;
+  transition: max-height 0.1s;
+
+
+}
+
+input:checked~label {
+  color: red;
+  font-weight: 600;
+}
+
+input:checked~label>svg {
+  transform: rotate(180deg);
+}
+
+.submenu {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background: white;
+  line-height: 0.9em;
+  transition: max-height 0.1s;
+  position: absolute;
+  min-width: 100%;
+  border: transparent;
+  z-index: 1000;
+
+}
+
+.submenu li a {
+  display: block;
+  padding: 5px;
+  color: rgb(58, 58, 58);
+  text-decoration: none;
+
+
+
+
+}
+
+.submenu li a:hover {
+  background: rgba(152, 150, 150, 0.3);
+}
+
+#arrow {
+  transition: transform 0.5s ease;
+}
+
+/**/
+#mega-menu {
+  background-color: white;
+
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  color: rgb(55, 51, 51);
+  margin-left: 5rem;
+  z-index: 1;
+}
+
+#cross {
+  margin-top: 1em;
+}
+
+#mega-menu>ul>li {
+  list-style-type: none;
+  color: rgb(243, 25, 25);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+#mega-menu>ul>li:hover {
+  color: brown;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(66, 60, 60);
+}
+
+@media (max-width:1000px) {
+
+  .buttons,
+  .double-border,
+  .social {
+    display: none;
+  }
+
+  header {
+    background-color: rgb(226, 45, 45);
+    ;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+
+}
