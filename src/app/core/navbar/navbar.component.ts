@@ -6,23 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-<<<<<<< HEAD
 
-=======
   showGames: boolean = false;
   showSwitch: boolean = false;
   showNStore: boolean = false;
   showPlayNint: boolean = false;
 
    gamesDrop = document.querySelector('.games-drop');
->>>>>>> giovanni
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
-<<<<<<< HEAD
-=======
 
   showMeGames(): void {
       if (this.showSwitch === true || this.showNStore===true || this.showPlayNint===true) {
@@ -56,11 +51,7 @@ export class NavbarComponent implements OnInit {
     }
     
     
-  }
+  } 
 
-  clickedOutside(): void{
-    this.showGames = false;
-  }
 
->>>>>>> giovanni
 }

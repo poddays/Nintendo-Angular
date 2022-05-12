@@ -14,10 +14,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { LoginBarComponent } from './core/login-bar/login-bar.component';
-<<<<<<< HEAD
-import { CaroselloComponent } from './views/homepage/components/carosello/carosello.component';
-=======
->>>>>>> giovanni
+
 import { BannerLinkComponent } from './views/homepage/components/banner-link/banner-link.component';
 import { ArticlesCardComponent } from './shared/articles-card/articles-card.component';
 import { SwitchBannerComponent } from './views/switch/components/switch-banner/switch-banner.component';
