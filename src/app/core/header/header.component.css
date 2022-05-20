@@ -47,7 +47,8 @@ input:hover::placeholder {
 }
 
 header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -58,6 +59,7 @@ header {
   font-weight: 500;
   letter-spacing: 0.5px;
   color: black;
+  background-color: #fff;
 
 }
 
@@ -194,12 +196,12 @@ input:checked~label>svg {
 /**/
 #mega-menu {
   background-color: white;
-
+  margin-top: 5rem;
   height: 300px;
   width: 100%;
   position: fixed;
   color: rgb(55, 51, 51);
-  margin-left: 5rem;
+
   z-index: 1;
 }
 
@@ -207,7 +209,11 @@ input:checked~label>svg {
   margin-top: 1em;
 }
 
-#mega-menu>ul>li {
+.list {
+  margin-left: 5rem;
+}
+
+.list>ul>li {
   list-style-type: none;
   color: rgb(243, 25, 25);
   font-size: 1rem;

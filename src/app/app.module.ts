@@ -48,6 +48,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SwitchLinkBannerComponent,
     GamesComponent,
     FilterBarComponent,
+   
   ],
   imports: [
     BrowserModule,

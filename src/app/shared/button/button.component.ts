@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { IButton } from './button';
+import { Component,  Input,  OnInit } from '@angular/core';
+
+
+
 
 
 
@@ -9,11 +11,7 @@ import { IButton } from './button';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent implements OnInit {
-
  
- 
-  
-
   constructor() { 
 
   }
@@ -21,4 +19,13 @@ export class ButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+ @Input() label!:string;
+
+
+  
 }
+ 
+ 
+  
+
+
