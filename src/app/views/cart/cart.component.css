@@ -1,0 +1,29 @@
+a {
+  color: rgb(230, 0, 18);
+  border-bottom: 2px solid rgb(230, 0, 18);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.all {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.pri {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.one {
+  color: #282323;
+  font-weight: 500;
+}
+
+#nav-mi {
+  font-size: 12px;
+}

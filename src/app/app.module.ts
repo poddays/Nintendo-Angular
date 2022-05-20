@@ -22,6 +22,7 @@ import { SwitchLinkBannerComponent } from './views/switch/components/switch-link
 import { GamesComponent } from './views/games/games.component';
 import { FilterBarComponent } from './shared/filter-bar/filter-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CartComponent } from './views/cart/cart.component';
 
 
 
@@ -48,6 +49,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SwitchLinkBannerComponent,
     GamesComponent,
     FilterBarComponent,
+    CartComponent,
    
   ],
   imports: [
