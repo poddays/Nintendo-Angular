@@ -16,6 +16,7 @@
     height: 120%;
     width: 448px;
     z-index: 2;
+    
  
     
 }
@@ -35,12 +36,6 @@
     gap: 25px;
     z-index: 0;
   
-}
-
-
-.hider.freccia.left{
-    position: absolute;
-    left: 0;
 }
 
 
@@ -80,5 +75,18 @@
         opacity: 60%;
         transition: 0.3s;
     }
+    .smallRight{
+        position:absolute;
+        right:0;
+        height:300px;
+    }
+    .smallLeft{
+        position:absolute;
+        left:0;
+        height:300px;
+    }
 
-    
+    .fullScreenContent{
+        position: absolute;
+        left: 0 !important;
+    }

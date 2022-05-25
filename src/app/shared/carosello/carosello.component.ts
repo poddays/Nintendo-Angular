@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ICard,availability,category } from '../../models/interface-card';
-import{cardsList} from '../../models/cardList';
-import { style } from '@angular/animations';
+import { ICard} from '../../models/interface-card';
+import { CardsService } from '../../views/services/cards.service';
+
 
 @Component({
   selector: 'nint-carosello',
@@ -9,20 +9,35 @@ import { style } from '@angular/animations';
   styleUrls: ['./carosello.component.css','../card/card.component.css']
 })
 export class CaroselloComponent implements OnInit {
+ 
+  //Import CardService
+   arrCard: ICard[] = [];
+  constructor(private cardService: CardsService){}
+
+  ngOnInit(): void {
+  this.arrCard = this.cardService.getAll() //Inserimento card tramite servizisio CardsService
+
+    console.log(this.cont2);
+   this.arrCard.splice(24,)
+    if (this.cont === 25) {
+      let left = document.querySelector('.freccia.left');
+      left?.setAttribute('style', `display:none`)
+    }
+  }
+
+
+  //Gestione carosello
   showCards: boolean = false; 
-  arrCard:ICard[] = cardsList;
    cont:number = 0;
    cont2:number = 0
    @Input() smallCard: boolean = false;
-
-
   caroselRight(){
-    if (this.cont2 < cardsList.length/4 ) {
+    if (this.cont2 < this.arrCard.length/4 - 0.5 ) {
       let content = document.querySelector('#content');
       this.cont = this.cont - 870
       this.cont2 = this.cont2 + 1
       content?.setAttribute('style', `transform: translateX(${this.cont}px); transition:0.7s;`)
-      if(this.cont2>cardsList.length/4  ){
+      if(this.cont2>this.arrCard.length/4  ){
         let right = document.querySelector('.freccia.right');
         right?.setAttribute('style', `display:none; transition:1s;`)
       }
@@ -39,7 +54,7 @@ export class CaroselloComponent implements OnInit {
     this.cont =this.cont + 870
     this.cont2 = this.cont2-1
     content?.setAttribute('style', `transform: translateX(${this.cont}px); transition:0.7s; `)
-    if(this.cont2<cardsList.length/4  ){
+    if(this.cont2<this.arrCard.length/4  ){
       let right = document.querySelector('.freccia.right');
       right?.setAttribute('style', `display:block; transition:1s;`)
     }
@@ -54,14 +69,5 @@ export class CaroselloComponent implements OnInit {
   }
 
   
-  ngOnInit(): void {
-    console.log(this.cont2);
-    
-   this.arrCard.splice(24,)
-    if (this.cont === 25) {
-      let left = document.querySelector('.freccia.left');
-      left?.setAttribute('style', `display:none`)
-    }
-  }
-
+ 
 }
