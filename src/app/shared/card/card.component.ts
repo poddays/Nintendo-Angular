@@ -11,12 +11,8 @@ import { ICard,category,availability } from '../../models/interface-card';
 export class CardComponent implements OnInit {
   @Input() card!: ICard;
   @Input() smallCard?:boolean;
-  constructor() {
+  constructor() {}
   
-
-
-  }
-
 //Click del cuoricino
 heartClicked(card:ICard){
       if (!card.heartBtn) {

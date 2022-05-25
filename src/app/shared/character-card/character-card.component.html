@@ -1,17 +1,20 @@
-<div class="character-content">
-<div  *ngFor="let character of characters">
-    <div class="character-container">
-        <a href="">
-            <div class="bk-image">
-                <img src="{{ character.background }}" alt="" width="300px">
+
+    <div class="character-content">
+        <div  *ngFor="let character of characters">
+            <div class="character-container">
+                <a href="">
+                    <div class="bk-image">
+                        <img src="{{ character.background }}" alt="" width="300px">
+                    </div>
+                    <div class="character-image">
+                        <img src="{{ character.img }}" alt="" style="max-width: 262px">
+                    </div>   
+                </a>
             </div>
-            <div class="character-image">
-                <img src="{{ character.img }}" alt="" style="max-width: 262px">
-            </div>   
-        </a>
-    </div>
-    <div class="h5-character">
-    <h5>{{ character.title }}<sup>TM</sup></h5>
-    </div>
-</div>
-</div>
+            <div class="h5-character">
+            <h5>{{ character.title }}<sup>TM</sup></h5>
+            </div>
+        </div>
+        </div>
+
+
