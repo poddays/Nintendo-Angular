@@ -1,2 +1,17 @@
 
+<div class="sticky-elements">
+    <nint-header></nint-header>
+    <div>
+        <nint-navbar (newShadowEvent)="changeShadow($event)"></nint-navbar>
+    </div>
+</div>
+
+<div class="dd"  *ngIf="shadow">
+    <div class="shadow"></div>
+</div>
+
 <app-homepage></app-homepage>
+
+
+
+<nint-footer></nint-footer>

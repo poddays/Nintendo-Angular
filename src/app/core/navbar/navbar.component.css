@@ -1,4 +1,6 @@
-
+.navbar-container{
+  
+}
 nav{
     z-index: 200px;
     background-color: white;
@@ -61,18 +63,17 @@ h3{
 
 .tendina{
     background-color: white;
-    position: relative;
     animation: slide 0.3s;
     height: 200px;
-    z-index: -1;
+    z-index: 3;
 }
 
 @keyframes slide{
 0%{
-bottom: 200px;
+    transform: translateY(-200px);
 }
 100%{
-bottom: 0px;
+    transform: translateY(0);
 }
 
 

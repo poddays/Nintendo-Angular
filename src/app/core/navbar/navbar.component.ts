@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'nint-navbar',
@@ -11,6 +11,22 @@ export class NavbarComponent implements OnInit {
   showSwitch: boolean = false;
   showNStore: boolean = false;
   showPlayNint: boolean = false;
+  showShadow:boolean = false;
+
+  @Output() newShadowEvent = new EventEmitter<boolean>()
+
+
+  callShadow(event:boolean){
+    event = this.showShadow
+    if ( this.showGames === true ||  this.showSwitch === true || this.showNStore === true || this.showPlayNint === true ) {
+      this.newShadowEvent.emit(event = true)
+    }
+    else{
+      this.newShadowEvent.emit(event = false)
+    }
+  }
+
+
 
    gamesDrop = document.querySelector('.games-drop');
 
@@ -20,11 +36,10 @@ export class NavbarComponent implements OnInit {
   }
 
   showMeGames(): void {
-      if (this.showSwitch === true || this.showNStore===true || this.showPlayNint===true) {
+      if (this.showSwitch === true ) {
         this.showGames = !this.showGames;
         this.showSwitch = false;
-        this.showNStore = false;
-        this.showPlayNint = false;
+        this.showShadow = true;
       }else{
         this.showGames = !this.showGames;
       }
@@ -35,6 +50,7 @@ export class NavbarComponent implements OnInit {
     if (this.showGames === true) {
       this.showSwitch = !this.showSwitch;
       this.showGames = false;
+      this.showShadow = true;
     }else{
       this.showSwitch = !this.showSwitch;
     }

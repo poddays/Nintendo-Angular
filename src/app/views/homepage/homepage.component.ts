@@ -10,7 +10,7 @@ export class HomepageComponent implements OnInit {
 
  
   smallCard:boolean = true;
-
+  
 
   
   
