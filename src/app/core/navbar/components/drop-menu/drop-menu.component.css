@@ -21,7 +21,9 @@ button:hover{
    
    
 }
-
+    svg{
+        fill: var(--grey);
+    }
     .gamesDrop:hover svg {
             
         fill: white ;

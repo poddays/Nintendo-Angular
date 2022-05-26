@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit { 
   smallCard:boolean = true;
- 
+
   
   constructor() { }
 
