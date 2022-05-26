@@ -32,6 +32,7 @@ import { HeroComponent } from './views/homepage/components/hero/hero.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +54,6 @@ import { HeroComponent } from './views/homepage/components/hero/hero.component';
     SwitchBannerComponent,
     SwitchLinkBannerComponent,
     GamesComponent,
-
     FilterBarComponent,
     DropMenuComponent,
     CustomPropDirective,
@@ -64,8 +64,6 @@ import { HeroComponent } from './views/homepage/components/hero/hero.component';
     FilterBarComponent,
     HomepageNewsComponent,
     HeroComponent
-    
-
   ],
   imports: [
     BrowserModule,

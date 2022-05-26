@@ -1,1 +1,83 @@
 <h1>Nintendo prova font</h1>
+<div id="filterBar">
+    <div id="clearbox">
+        <button id="filterC" value="reset">Clear all</button>
+    </div>
+    <div id="subConteiner">
+        <div id="rigAccord" class="panel" >
+            <input type="checkbox" class="check"> Deals <br>
+            <input type="checkbox" class="check"> Demo available <br>
+            <input type="checkbox" class="check"> DLC  <br>
+            <input type="checkbox" class="check"> Game with DLC  
+        </div>
+        <button id="nntBtn" (click)="isNntBtnOpened=checkStatus(isNntBtnOpened)" class="accordion">Nintendo Switch Online features</button>
+        <div class="panel" *ngIf="isNntBtnOpened">
+            <input type="checkbox" class="check"> Online Play <br>
+           
+            <input type="checkbox" class="check"><span> Save data cloud</span> <br>
+      
+            <input type="checkbox" class="check"> Smarthphone App
+        </div>
+        <button id="platBtn" (click)="platBtn=checkStatus(platBtn)"  class="accordion">Platform</button>
+        <div class="panel" *ngIf="platBtn">
+            <input type="checkbox" class="check"> Nintendo Switch 
+        </div>
+        <button  id="aviBtn" (click)="aviBtn=checkStatus(aviBtn)"class="accordion">Available</button>
+        <div class="panel" *ngIf="aviBtn">
+            <input type="checkbox" class="check"> available now <br>
+            <input type="checkbox" class="check"> coming soon  <br>
+            <input type="checkbox" class="check"> new release <br>
+            <input type="checkbox" class="check"> pre-order
+        </div>
+        <button id="gameBtn" (click)="gameBtn=checkStatus(gameBtn)" class="accordion">Game Type</button>
+        <div class="panel" *ngIf="gameBtn">
+            <input type="checkbox" class="check"> adventure <br>
+            <input type="checkbox" class="check"> action <br>
+            <input type="checkbox" class="check"> arcade <br>
+            <input type="checkbox" class="check"> board game <br>
+            <input type="checkbox" class="check"> education <br>
+            <p>show more</p>
+        </div>
+        <button id="editBtn" (click)="editBtn=checkStatus(editBtn)" class="accordion">Edition</button>
+        <div class="panel" *ngIf="editBtn"> 
+            <input type="checkbox" class="check"> digital <br>
+            <input type="checkbox" class="check"> physical <br>
+            <input type="checkbox" class="check"> special edition <br>
+        </div>
+        <button id="seriesBtn" (click)="seriesBtn=checkStatus(seriesBtn)" class="accordion">Character or series</button>
+        <div class="panel" *ngIf="seriesBtn">
+            <input type="checkbox" class="check"> animal crossing <br>
+            <input type="checkbox" class="check"> donkey kong <br>
+            <input type="checkbox" class="check"> fire emblement <br>
+            <input type="checkbox" class="check"> kirby <br>
+            <input type="checkbox" class="check"> link <br>
+            <p>show more</p>
+        </div>
+        <button id="priceBtn" (click)="priceBtn=checkStatus(priceBtn)" class="accordion">Price</button>
+        <div class="panel" *ngIf="priceBtn">
+            <input type="checkbox" class="check"> free to start <br>
+            <input type="checkbox" class="check"> $0 - $9,99 <br>
+            <input type="checkbox" class="check"> $0 - $4,99 <br>
+            <input type="checkbox" class="check"> $10 - $19,99 <br>
+            <input type="checkbox" class="check"> $20 - $39,99 <br>
+            <p>show more</p>
+        </div>
+        <button id="ratingBtn" (click)="ratingBtn =checkStatus(ratingBtn)" class="accordion">ESRB Rating</button>
+        <div class="panel" *ngIf="ratingBtn">
+            <input type="checkbox" class="check"> e-rating <br>
+            <input type="checkbox" class="check"> e10-rating <br>
+            <input type="checkbox" class="check"> t-rating <br>
+            <input type="checkbox" class="check"> m-rating <br>
+            <input type="checkbox" class="check"> rp-rating <br>
+            <p>show more</p>
+        </div>
+        <button id="playerBtn" (click)="playerBtn=checkStatus(playerBtn)" class="accordion">No.of players</button>
+        <div class="panel" *ngIf="playerBtn">
+            <input type="checkbox" class="check"> 2+ <br>
+            <input type="checkbox" class="check"> 3+ <br>
+            <input type="checkbox" class="check"> 4+<br>
+            <input type="checkbox" class="check"> single player radio
+        </div>
+    </div>
+</div>
+
