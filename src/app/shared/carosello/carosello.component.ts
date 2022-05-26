@@ -29,28 +29,34 @@ export class CaroselloComponent implements OnInit {
   //Gestione carosello
   showCards: boolean = false; 
    cont:number = 0;
-   cont2:number = 0
+   cont2:number = 0;
+   @Input() varCaroselClass:string = ""
    @Input() smallCard: boolean = false;
+ 
+
   caroselRight(){
     if (this.cont2 < this.arrCard.length/4 - 0.5 ) {
-      let content = document.querySelector('#content');
+      let content = document.querySelector('.content');
       this.cont = this.cont - 870
       this.cont2 = this.cont2 + 1
       content?.setAttribute('style', `transform: translateX(${this.cont}px); transition:0.7s;`)
       if(this.cont2>this.arrCard.length/4  ){
         let right = document.querySelector('.freccia.right');
         right?.setAttribute('style', `display:none; transition:1s;`)
+        
       }
     }
     if (this.cont< 0) {
         let left = document.querySelector('.freccia.left');
+        let smallLeft = document.querySelector('.smallLeft');
         left?.setAttribute('style', `display:block; transition:1s;`)
+        smallLeft?.setAttribute('style', `display:block; transition:1s;`)
     }
     console.log(this.cont);  
   }
   
   caroselLeft(){
-    let content = document.querySelector('#content');
+    let content = document.querySelector('.content');
     this.cont =this.cont + 870
     this.cont2 = this.cont2-1
     content?.setAttribute('style', `transform: translateX(${this.cont}px); transition:0.7s; `)
@@ -60,7 +66,9 @@ export class CaroselloComponent implements OnInit {
     }
     if (this.cont>= 0) {
       let left = document.querySelector('.freccia.left');
+      let smallLeft = document.querySelector('.smallLeft');
       left?.setAttribute('style', `display:none; transition:1s;`)
+      smallLeft?.setAttribute('style', `display:none; transition:1s;`)
     }
     if (this.cont>= 0) {
       content?.setAttribute('style', `transform: translateX(${0}px);  transition:0.7s;`)

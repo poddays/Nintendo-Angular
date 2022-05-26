@@ -5,7 +5,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="36" role="presentation" alt="" data-testid="ChevronLeftIcon" size="36" ><path fill-rule="evenodd" clip-rule="evenodd" d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"></path></svg>
             </button>
         </div>
-        <div id="content" [ngClass]="{fullScreenContent: smallCard}">
+        <div class="content {{varCaroselClass}}" [ngClass]="{fullScreenContent: smallCard}">
             <div class="cards" *ngFor="let card of arrCard ">
                 <nint-card  [card]="card" [smallCard]="smallCard"></nint-card>
             </div>
@@ -18,9 +18,6 @@
             </button>
         </div>
 
-
-        
-        
         <button class="freccia smallLeft" (click)="caroselLeft()" *ngIf="smallCard">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="36" role="presentation" alt="" data-testid="ChevronLeftIcon" size="36" ><path fill-rule="evenodd" clip-rule="evenodd" d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"></path></svg>
         </button>
