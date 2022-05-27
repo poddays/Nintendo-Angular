@@ -29,7 +29,7 @@ import { StoreCardComponent } from './views/store/components/store-card/store-ca
 import { BigCardStoreComponent } from './views/store/components/big-card-store/big-card-store.component';
 import { HomepageNewsComponent } from './views/homepage/components/homepage-news/homepage-news.component';
 import { HeroComponent } from './views/homepage/components/hero/hero.component';
-import { NintendoRoutingModule } from './nintendo/nintendo-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -69,7 +69,7 @@ import { NintendoRoutingModule } from './nintendo/nintendo-routing.module';
   imports: [
     BrowserModule,
     NgbModule,
-    NintendoRoutingModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

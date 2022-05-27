@@ -45,6 +45,8 @@ export class CaroselloComponent implements OnInit {
         right?.setAttribute('style', `display:none; transition:1s;`)
         
       }
+   
+      
     }
     if (this.cont< 0) {
         let left = document.querySelector('.freccia.left');
@@ -52,7 +54,7 @@ export class CaroselloComponent implements OnInit {
         left?.setAttribute('style', `display:block; transition:1s;`)
         smallLeft?.setAttribute('style', `display:block; transition:1s;`)
     }
-    console.log(this.cont);  
+    console.log( ` cont ${this.cont}`);  
   }
   
   caroselLeft(){
