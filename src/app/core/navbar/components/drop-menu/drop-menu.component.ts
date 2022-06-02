@@ -11,8 +11,8 @@ import { LinkDrop } from "../../../../models/interface-link-dropdown";
 })
 export class DropMenuComponent implements OnInit {
   linkButtons: INavButton[] =[]
-   
-
+   @Input() showSwitch?: boolean
+   @Input() showGames?: boolean
   constructor() { 
     this.linkButtons = [
       {

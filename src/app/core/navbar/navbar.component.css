@@ -60,9 +60,9 @@ h3{
 }
 
 
-.tendina{
+.dropDown{
     background-color: white;
-    animation: slide 0.3s;
+    animation: slide 0.2s;
     height: 200px;
     z-index: 3;
 }
@@ -74,9 +74,6 @@ h3{
 100%{
     transform: translateY(0);
 }
-
-
-
 }
 
 

@@ -53,11 +53,11 @@
     </div>
 </nav>
 
-            <div class="tendina" *ngIf="showGames">
-        <nint-drop-menu ></nint-drop-menu>
+            <div class="dropDown" *ngIf="showGames">
+        <nint-drop-menu [showGames]="showGames"></nint-drop-menu>
             </div>
-            <div class="tendina" *ngIf="showSwitch">
-        <nint-drop-menu></nint-drop-menu>
+            <div  class="dropDown" *ngIf="showSwitch">
+        <nint-drop-menu [showSwitch]="showSwitch" ></nint-drop-menu>
             </div>
 </div>
 
