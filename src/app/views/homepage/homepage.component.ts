@@ -6,13 +6,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })
-export class HomepageComponent implements OnInit {
-  
+export class HomepageComponent implements OnInit { 
+  smallCard:boolean = true;
+
   
   constructor() { }
 
+
   ngOnInit(): void {
-    
+
+
+  
   }
 
 }

@@ -7,6 +7,7 @@
     grid-template-rows: 0fr 0.1fr 0.4fr 0fr;
     gap: 1%;
     color: var(--main-black);
+    cursor: pointer;
 }
 a{
     text-decoration: none;

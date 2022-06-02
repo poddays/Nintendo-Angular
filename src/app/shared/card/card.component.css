@@ -195,6 +195,12 @@ animation: in 0.3s ease-in-out forwards;
     .card-small .heart{
         display: none;
     }
+    .card-small .saleTag{
+        display: none;
+    }
+    .card-small .sale{
+        display: none;
+    }
     .card-small .category{
         margin-bottom: 20px;
     }

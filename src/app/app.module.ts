@@ -28,6 +28,9 @@ import { CaroselloComponent } from './shared/carosello/carosello.component';
 import { StoreCardComponent } from './views/store/components/store-card/store-card.component';
 import { BigCardStoreComponent } from './views/store/components/big-card-store/big-card-store.component';
 import { HomepageNewsComponent } from './views/homepage/components/homepage-news/homepage-news.component';
+import { HeroComponent } from './views/homepage/components/hero/hero.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 
 @NgModule({
@@ -51,7 +54,6 @@ import { HomepageNewsComponent } from './views/homepage/components/homepage-news
     SwitchBannerComponent,
     SwitchLinkBannerComponent,
     GamesComponent,
-
     FilterBarComponent,
     DropMenuComponent,
     CustomPropDirective,
@@ -61,12 +63,13 @@ import { HomepageNewsComponent } from './views/homepage/components/homepage-news
     BigCardStoreComponent,
     FilterBarComponent,
     HomepageNewsComponent,
+    HeroComponent,
     
-
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

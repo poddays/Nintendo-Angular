@@ -27,13 +27,14 @@
        
     }
 
-#content{
+.content{
     display: flex;
     flex-direction: row;
     position: absolute;
     left: 480px;
     gap: 25px;
     z-index: 0;
+    margin-left: 25px;
   
 }
 
@@ -53,7 +54,7 @@
     background-color: rgb(0, 0, 0);
     opacity: 30%;
     height: 100%;
-    width: 63px;
+    width: 74px;
     border-radius: 3px;
     z-index: 3;   
 }
@@ -79,6 +80,21 @@
     .freccia:hover{
         opacity: 60%;
         transition: 0.3s;
+    }
+    .smallLeft{
+        position: absolute;
+        left: 0;
+        display: none;
+    }
+    
+    .smallRight{
+        position: absolute;
+        right: 0;
+    }
+    
+    .fullScreenContent{
+        position: absolute;
+        left: 0;
     }
 
     
