@@ -30,6 +30,7 @@ import { BigCardStoreComponent } from './views/store/components/big-card-store/b
 import { HomepageNewsComponent } from './views/homepage/components/homepage-news/homepage-news.component';
 import { HeroComponent } from './views/homepage/components/hero/hero.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ListComponent } from './core/navbar/components/drop-menu/list/list.component';
 
 
 
@@ -64,6 +65,7 @@ import { AppRoutingModule } from './app-routing.module';
     FilterBarComponent,
     HomepageNewsComponent,
     HeroComponent,
+    ListComponent,
     
   ],
   imports: [

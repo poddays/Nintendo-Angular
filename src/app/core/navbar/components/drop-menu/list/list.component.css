@@ -1,0 +1,41 @@
+.list-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 280px;
+    top: 60px;
+  
+}
+.list{
+    gap: 20px;
+}
+
+li{
+    list-style-type: none;
+    font-size: 14px;
+    color: var(--light-grey);
+}
+ol{
+    position: relative;
+    left: -27px;
+}
+li:hover{
+    cursor: pointer;
+    color: var(--nint-red);
+}
+
+.title-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 210px;
+     gap: 10px;
+}
+h3{
+    font-size: 14px;
+    margin-top: 10px;
+   
+}
+svg{
+    fill: var(--nint-red);
+}

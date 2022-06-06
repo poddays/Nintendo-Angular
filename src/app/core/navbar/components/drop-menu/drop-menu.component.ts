@@ -13,6 +13,8 @@ export class DropMenuComponent implements OnInit {
   linkButtons: INavButton[] =[]
    @Input() showSwitch?: boolean
    @Input() showGames?: boolean
+   @Input() showNStore?: boolean
+   @Input() showPlayNint?: boolean
   constructor() { 
     this.linkButtons = [
       {
@@ -28,10 +30,6 @@ export class DropMenuComponent implements OnInit {
         link:''
       },
     ]
-
-
-
-
   }
 
   ngOnInit(): void {
