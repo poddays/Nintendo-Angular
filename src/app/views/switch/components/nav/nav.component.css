@@ -1,0 +1,10 @@
+nav{
+    margin:10rem;
+    display:flex;
+    justify-content:space-between;
+}
+.home{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
