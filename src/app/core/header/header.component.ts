@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
 show:boolean = false;
 display:boolean= true;
 cross:boolean= false;
+showLoginBar:boolean = false
   constructor() { }
 
   ngOnInit(): void {
@@ -23,5 +24,10 @@ hide():any{
   this.display=true;
   this.cross= false;
 }
+
+FadeInLoginBar(){
+  this.showLoginBar = !this.showLoginBar
+}
+
 
 }

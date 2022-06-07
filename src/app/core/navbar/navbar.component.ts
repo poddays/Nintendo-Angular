@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   @Input() showShadow:boolean = false;
 
   @Output() newShadowEvent = new EventEmitter<boolean>()
-
+shadow:boolean = false
 
   callShadow(event:boolean){
     event = this.showShadow
@@ -26,7 +26,13 @@ export class NavbarComponent implements OnInit {
       
     }
   }
-
+  closeShadow(){
+     this.shadow = false
+      this.showSwitch = false;
+      this.showNStore = false;
+      this.showPlayNint = false;
+      this.showGames = false
+  }
   
  
 
@@ -45,8 +51,10 @@ export class NavbarComponent implements OnInit {
       this.showSwitch = false;
       this.showNStore = false;
       this.showPlayNint = false;
+      
     }else{
       this.showGames = !this.showGames;
+      this.shadow = !this.shadow
     }
       
   }
@@ -59,6 +67,7 @@ export class NavbarComponent implements OnInit {
       this.showPlayNint = false;
     }else{
       this.showSwitch = !this.showSwitch;
+      this.shadow = !this.shadow
     }
   }
 
@@ -70,6 +79,7 @@ export class NavbarComponent implements OnInit {
       this.showGames = false;
     }else{
       this.showPlayNint = !this.showPlayNint;
+      this.shadow = !this.shadow
     }
     
     
@@ -83,6 +93,7 @@ showMeNintStore(){
     this.showGames = false;
   }else{
     this.showNStore = !this.showNStore;
+    this.shadow = !this.shadow
   }
 }
 

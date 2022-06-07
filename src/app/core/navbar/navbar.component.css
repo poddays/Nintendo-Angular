@@ -64,7 +64,8 @@ h3{
     background-color: white;
     animation: slide 0.2s;
     height: 200px;
-    z-index: 3;
+    position: relative;
+    z-index: 400;
 }
 
 @keyframes slide{
@@ -78,3 +79,13 @@ h3{
 
 
 
+.shadow{
+    position: absolute;
+    top: 120px;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 60%;
+    z-index: 20;
+    
+}

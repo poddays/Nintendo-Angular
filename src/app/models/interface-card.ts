@@ -24,5 +24,8 @@ freeDemo = "Free demo",
 dlc = "DLC bundle",
 preOrder = "Pre-order now",
 free= "Free download",
-sale= "Now on sale"
+sale= "Now on sale",
+age = "2022",
+TBD= "TBD",
+DLC= "DLC"
 }

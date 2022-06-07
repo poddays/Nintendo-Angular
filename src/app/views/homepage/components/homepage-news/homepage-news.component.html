@@ -1,18 +1,22 @@
 <div class="container">
+<<<<<<< HEAD
+  <div class="main-margin">
+=======
     <div class="main-margin">
         <h1>News</h1>
+>>>>>>> bad8b73b14a4a5ef0dc86ba61948fb895c552071
     <div class="grid2x2">
-        <div *ngFor="let singleCard of newsCard.slice(0,2)">
-            <nint-articles-card [card]="singleCard" [isBig]="true"></nint-articles-card>
-        </div>
+      <div *ngFor="let singleCard of newsCard.slice(0,2)">
+        <nint-articles-card [card]="singleCard" [isBig]="true"></nint-articles-card>
+      </div>
     </div>
 
     <div class="grid4x4">
-        <div *ngFor="let singleCard of newsCard.slice(2,6)">
-            <nint-articles-card [card]="singleCard" ></nint-articles-card>
-        </div>
+      <div *ngFor="let singleCard of newsCard.slice(2,6)">
+        <nint-articles-card [card]="singleCard"></nint-articles-card>
+      </div>
     </div>
-</div>
+  </div>
 
 </div>
 <hr>

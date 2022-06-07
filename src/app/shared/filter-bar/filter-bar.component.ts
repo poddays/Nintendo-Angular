@@ -12,15 +12,15 @@ export class FilterBarComponent implements OnInit {
    
    }
 
-  isNntBtnOpened = true;
-  playerBtn = true;
-  ratingBtn = true;
-  priceBtn = true;
-  seriesBtn = true;
-  editBtn = true;
-  gameBtn = true;
-  aviBtn = true;
-  platBtn = true;
+  isNntBtnOpened = false;
+  playerBtn = false;
+  ratingBtn = false;
+  priceBtn = false;
+  seriesBtn = false;
+  editBtn = false;
+  gameBtn = false;
+  aviBtn = false;
+  platBtn = false;
  
   checkStatus(buttonStatus : boolean) : boolean{
       return !buttonStatus
