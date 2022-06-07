@@ -31,12 +31,8 @@ import { HomepageNewsComponent } from './views/homepage/components/homepage-news
 import { HeroComponent } from './views/homepage/components/hero/hero.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavComponent } from './views/switch/components/nav/nav.component';
-<<<<<<< HEAD
-import { ListComponent } from './core/navbar/components/drop-menu/list/list.component';
-=======
 import { SalespartComponent } from './views/switch/components/salespart/salespart.component';
->>>>>>> albrim
-
+import { ListComponent } from './core/navbar/components/drop-menu/list/list.component';
 
 
 @NgModule({
@@ -71,12 +67,8 @@ import { SalespartComponent } from './views/switch/components/salespart/salespar
     HomepageNewsComponent,
     HeroComponent,
     NavComponent,
-<<<<<<< HEAD
-    ListComponent,
-=======
     SalespartComponent,
->>>>>>> albrim
-    
+    ListComponent
   ],
   imports: [
     BrowserModule,
