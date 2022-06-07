@@ -31,6 +31,7 @@ import { HomepageNewsComponent } from './views/homepage/components/homepage-news
 import { HeroComponent } from './views/homepage/components/hero/hero.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavComponent } from './views/switch/components/nav/nav.component';
+import { SalespartComponent } from './views/switch/components/salespart/salespart.component';
 
 
 
@@ -66,6 +67,7 @@ import { NavComponent } from './views/switch/components/nav/nav.component';
     HomepageNewsComponent,
     HeroComponent,
     NavComponent,
+    SalespartComponent,
     
   ],
   imports: [
