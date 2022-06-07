@@ -1,1 +1,112 @@
-<p>games works!</p>
+<div>
+  <div class="games">
+    <!-- sezione nintendo switch games -->
+    <div class="first-section">
+      <!-- prima sezione nintendo switch games -->
+      <div class="left-side">
+        <div class="left-side-box">
+          <div class="games-title">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="54" role="presentation" alt=""
+                data-testid="DPadIcon" color="currentColor" size="24">
+                <path
+                  d="M30.1 10.4h-8.5V1.9c0-1-.8-1.9-1.9-1.9h-7.5c-1 0-1.9.8-1.9 1.9v8.5H1.9c-1 0-1.9.8-1.9 1.9v7.5c0 1 .8 1.9 1.9 1.9h8.5v8.5c0 1 .8 1.9 1.9 1.9h7.5c1 0 1.9-.8 1.9-1.9v-8.5h8.5c1 0 1.9-.8 1.9-1.9v-7.5c-.1-1.1-.9-1.9-2-1.9zM7.5 16.9H3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9s-.5.9-1 .9zm9.4 11.3c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.8zm0-20.7c0 .5-.4.9-.9.9s-.9-.4-.9-.9V3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.7zm11.3 9.4h-3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9.1.5-.3.9-.9.9z"
+                  fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+              </svg>
+            </div>
+            <div>
+              <h2>Games</h2>
+            </div>
+          </div>
+          <div class="games-description">
+            <p>
+              Buy digital games here and download them directly to your Nintendo Switch™ system (no code required)!
+              Plus, shop physical games, sales, new releases, and more.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="right-side">
+        <img
+          src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_auto/c_scale,w_800/v1/ncom/en_US/merchandising/curated%20list/games%20-%20main%20page/2400x1200_Nintendo-Switch-Sports-Group"
+          alt="">
+      </div>
+    </div>
+    <div class="menu">
+      <!-- menu sezione nintendo switch games -->
+      <div class="menu-content">
+        <a href="">New releases</a>
+        <a href="">Best sellers</a>
+        <a href="">Hit the road with handheld mode</a>
+        <a href="">Coming soon</a>
+        <a href="">Mario</a>
+        <a href="">Pokémon</a>
+        <a href="">The legend of Zelda</a>
+        <a href="">$19.99 and under</a>
+        <a href="">Sales and deals</a>
+        <a href="">Indie World Showcase</a>
+      </div>
+
+
+
+    </div>
+    <div>
+      <hr>
+    </div>
+    <div>
+      <!-- contenuto sezione nintendo switch games -->
+      <div class="navigation-games">
+        <div class="navigation-games-content">
+          <div>
+
+          </div>
+          <div>
+            <span>Short by</span>
+            <select>
+              <option value="featured">Featured</option>
+              <option value="featured">Release date</option>
+              <option value="featured">Title (A-Z)</option>
+              <option value="featured">Title (Z-A)</option>
+              <option value="featured">Price(high to low)</option>
+              <option value="featured">Price (low to high)</option>
+
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <div class="main-container">
+        <div class="filter-bar">
+
+        </div>
+        <div class="new-container">
+          <div class="cards-container">
+            <div *ngFor="let card of cards" class="card-container">
+              <nint-card [card]="card"></nint-card>
+            </div>
+          </div>
+          <div class="button">
+            <button type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" role="presentation" alt="" data-testid="PlusIcon" color="currentColor" size="24"><path fill="currentColor" fill-rule="evenodd" d="M32.04 12h-12V0h-8v12h-12v8h12v12h8V20h12v-8z"></path></svg>
+               Load more results</button>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- <div class="cards-container">
+            <div *ngFor="let card of cards" >
+              <div class="card-container">
+                <nint-card [card]="card"></nint-card>
+              </div>
+            </div>
+            <div class="button">
+              <button type="button">+ Load more results</button>
+            </div>
+          </div> -->
