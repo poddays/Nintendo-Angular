@@ -27,6 +27,9 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+  
+ 
+
    gamesDrop = document.querySelector('.games-drop');
 
   constructor() { }
@@ -37,23 +40,23 @@ export class NavbarComponent implements OnInit {
   }
 
   showMeGames(): void {
-    
-      if (this.showSwitch === true ) {
-        this.showGames = !this.showGames;
-        this.showSwitch = false;
-      }
-    
-      else{
-        this.showGames = !this.showGames;
-      }
+    if (this.showPlayNint === true || this.showNStore===true || this.showSwitch===true) {
+      this.showGames = !this.showGames;
+      this.showSwitch = false;
+      this.showNStore = false;
+      this.showPlayNint = false;
+    }else{
+      this.showGames = !this.showGames;
+    }
       
   }
   
   showMeSwitch(): void {
-    if (this.showGames === true) {
+    if (this.showPlayNint === true || this.showNStore===true || this.showGames===true) {
       this.showSwitch = !this.showSwitch;
       this.showGames = false;
-      this.showShadow = true;
+      this.showNStore = false;
+      this.showPlayNint = false;
     }else{
       this.showSwitch = !this.showSwitch;
     }
@@ -71,6 +74,26 @@ export class NavbarComponent implements OnInit {
     
     
   } 
+
+showMeNintStore(){
+  if (this.showSwitch === true || this.showPlayNint===true || this.showGames===true) {
+    this.showNStore = !this.showNStore;
+    this.showSwitch = false;
+    this.showPlayNint = false;
+    this.showGames = false;
+  }else{
+    this.showNStore = !this.showNStore;
+  }
+}
+
+closeAll(){
+    this.showSwitch = false;
+    this.showPlayNint = false;
+    this.showGames = false;
+    this.showPlayNint = false;
+  
+}
+
 
 
 }

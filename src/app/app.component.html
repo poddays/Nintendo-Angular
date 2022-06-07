@@ -1,4 +1,8 @@
 
+
+
+
+
 <div class="sticky-elements">
     <nint-header></nint-header>
     <div>
@@ -6,10 +10,11 @@
     </div>
 </div>
 
+<div style="margin-top: 103px;">
+  <router-outlet></router-outlet>
+</div>
 
-<router-outlet></router-outlet>
 
-  <div class="shadow" *ngIf="shadow" (click) = closeShadow()></div>
+  <div class="shadow" *ngIf="shadow" (click) = closeShadow() ></div>
 
 <nint-footer></nint-footer>
-
