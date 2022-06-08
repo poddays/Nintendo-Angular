@@ -1,1 +1,16 @@
+<div class="sticky-elements">
+  <nint-header></nint-header>
+  <div>
+    <nint-navbar [showShadow]="shadow" (newShadowEvent)="changeShadow($event)"></nint-navbar>
+  </div>
+</div>
 
+<div style="margin-top: 103px;">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+<!-- <div class="shadow" *ngIf="shadow" (click) = closeShadow() ></div> -->
+
+<nint-footer></nint-footer>

@@ -1,0 +1,78 @@
+nav {
+  margin-top: 10rem !important;
+  width: 100% !important;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0px auto;
+  gap: 5rem;
+  height: 50px;
+  flex-shrink: 0px;
+  white-space: nowrap;
+}
+
+.strong-red {
+  background-color: var(--nint-red);
+  border-radius: 1rem;
+  color: azure;
+}
+
+svg {
+  padding-bottom: 0.3em;
+}
+
+.xera {
+  height: 2.38rem;
+  width: fit-content;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+ 
+
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+.xera:hover {
+  background-color: rgb(232, 138, 138);
+  border-radius: 1.5rem;
+  transition: all 300ms ease-out 25ms;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  animation-name: pudding;
+}
+
+@keyframes pudding {
+  20% {
+    height: 102%;
+    width: 100%;
+  }
+
+  60% {
+    height:103%;
+    width: 101%;
+  }
+
+  80% {
+    height: 103%;
+    width: 102%;
+  }
+
+  90% {
+    height: 104%;
+    width: 105%;
+  }
+
+  100% {
+    height: 104%;
+    width: 107%;
+  }
+}

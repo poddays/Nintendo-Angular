@@ -1,0 +1,160 @@
+.gradient {
+  position: absolute;
+  top: 100px;
+  bottom: 0px;
+  width: 100%;
+  z-index: -1;
+  height: 480px;
+  background: linear-gradient(rgb(251, 70, 0), rgb(253, 255, 3)) 0% 0% / cover repeat;
+  background-repeat: repeat;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.hero-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: -40px;
+}
+
+img {
+  height: 500px;
+  width: 1440px;
+  border-radius: 8px;
+}
+
+.btn {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #e60012;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ac000d;
+  -webkit-transition: 0.50s;
+  transition: 0.50s;
+}
+
+.btn-container {
+  height: 46.19px;
+  width: 171.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.btn-container:hover {
+  -webkit-animation: pudding 0.50s forwards ease-in-out;
+  animation: pudding 0.50s forwards ease-in-out;
+  -webkit-transform: scale(102%);
+  transform: scale(102%);
+}
+
+@keyframes pudding {
+  40% {
+    height: 66px;
+    width: 180px;
+  }
+
+  60% {
+    height: 54px;
+    width: 175px;
+  }
+
+  80% {
+    height: 56px;
+    width: 178px;
+  }
+
+  90% {
+    height: 57px;
+    width: 178px;
+  }
+
+  100% {
+    height: 55px;
+    width: 172px;
+  }
+}
+
+
+
+.text-container {
+  position: relative;
+  height: 100px;
+  width: 1440px;
+  margin: 0 auto;
+  top: 100px;
+
+}
+.part{
+    display:flex;
+    justify-content: space-between;
+}
+h1{
+    font-size: 32px;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  font-weight: 300;
+  color: rgb(72, 72, 72);
+}
+.text-logo{
+    display: flex;
+    min-width: 120px;
+    font-weight: 300;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: fit-content;
+    color: rgb(72, 72, 72);
+    width: 300px;
+    margin-bottom: 1.2rem;
+}
+hr{
+    width:75%;
+}
+.prova {
+  line-height: 1rem;
+  margin: -10px;
+}
+.logo {
+    padding-left: 6.5rem;
+    height: 100px;
+    width: 400px;
+    display:flex;
+  }
+.logo img {
+  height: 82px;
+  width: 54px;
+  margin-right: 20px;
+}
+.hr-grande{
+    margin-top:2rem;
+    width:100%;
+}

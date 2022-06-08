@@ -1,4 +1,4 @@
-import { ArticlesCard } from "../models/interface-article-card";
+import { ArticlesCard } from "./interface-article-card";
 export const newsCard:ArticlesCard[] = [
     {
       image : "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_auto/c_scale,w_800/v1/ncom/en_US/articles/2022/explore-battle-and-build-with-the-latest-game-trial-dragon-quest-builders-2/1920x1080_LHA-546_EN_v01?_a=AJADJWI0",

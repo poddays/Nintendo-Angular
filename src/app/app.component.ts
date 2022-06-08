@@ -1,4 +1,4 @@
-import { Component, } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { ICard, category,availability  } from '../app/models/interface-card';
 
 @Component({
@@ -6,10 +6,26 @@ import { ICard, category,availability  } from '../app/models/interface-card';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'nintendo';
   smallCard:boolean = true;
 
+  shadow!: boolean ;
+
+  changeShadow(newItem:boolean){
+    this.shadow = newItem
+  }
+  
+  closeShadow(){
+    this.shadow = false
+  }
+
+ngOnInit(): void {
+
+    
+}
+
+  
 constructor(){}
 
 }

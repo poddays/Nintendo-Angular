@@ -1,8 +1,27 @@
+<<<<<<< HEAD
 .container-news {
   width: 1143.98px;
   display: flex;
   flex-direction: column;
   color: var(--grey);
+=======
+.container-news{
+    width: 1143.98px;
+    display: flex;
+    flex-direction: column;
+    color: var(--grey); 
+    
+}
+.title-page{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 14px;
+    
+}
+.filter{
+    margin-bottom: 80px;
+>>>>>>> main
 }
 
 .title-page {
@@ -144,3 +163,4 @@ button>svg {
 .blue {
   background-color: rgb(57, 70, 160);
 }
+

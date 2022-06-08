@@ -1,3 +1,8 @@
+header{
+  background-color: white;
+  
+}
+
 .logo {
   background-color: rgb(226, 45, 45);
   width: 20%;
@@ -251,3 +256,23 @@ input:checked~label>svg {
 
 
 }
+
+
+.loginBar{
+ position: absolute;
+ right: 0;
+ top: 104px;
+ animation: fadeIn 0.4s;
+
+}
+@keyframes fadeIn{
+  from{
+   right: -2000px;
+  }
+  to{
+    right: 0px;
+  }
+
+}
+
+

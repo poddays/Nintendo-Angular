@@ -1,5 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -7,15 +6,17 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })
-export class HomepageComponent implements OnInit {
+export class HomepageComponent implements OnInit { 
+  smallCard:boolean = true;
+
   
-  hero='https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_auto/c_scale,w_1500/v1/ncom/en_US/merchandising/center-stage-banner/Mario%20Strikers%20Battle%20league/Ncom_3600x1300_desktop-2'
- 
- 
-  constructor(private route:ActivatedRoute) { }
+  constructor() { }
+
 
   ngOnInit(): void {
-    
+
+
+  
   }
 
 }

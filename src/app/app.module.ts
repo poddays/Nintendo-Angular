@@ -28,10 +28,11 @@ import { CaroselloComponent } from './shared/carosello/carosello.component';
 import { StoreCardComponent } from './views/store/components/store-card/store-card.component';
 import { BigCardStoreComponent } from './views/store/components/big-card-store/big-card-store.component';
 import { HomepageNewsComponent } from './views/homepage/components/homepage-news/homepage-news.component';
-import { RouterModule } from '@angular/router';
-import { CartComponent } from 'src/app/views/cart/cart.component';
-import { WishListComponent } from 'src/app/views/wish-list/wish-list.component';
-
+import { HeroComponent } from './views/homepage/components/hero/hero.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavComponent } from './views/switch/components/nav/nav.component';
+import { SalespartComponent } from './views/switch/components/salespart/salespart.component';
+import { ListComponent } from './core/navbar/components/drop-menu/list/list.component';
 
 
 @NgModule({
@@ -55,7 +56,6 @@ import { WishListComponent } from 'src/app/views/wish-list/wish-list.component';
     SwitchBannerComponent,
     SwitchLinkBannerComponent,
     GamesComponent,
-
     FilterBarComponent,
     DropMenuComponent,
     CustomPropDirective,
@@ -65,14 +65,15 @@ import { WishListComponent } from 'src/app/views/wish-list/wish-list.component';
     BigCardStoreComponent,
     FilterBarComponent,
     HomepageNewsComponent,
-    WishListComponent,
-    CartComponent
-
+    HeroComponent,
+    NavComponent,
+    SalespartComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
-   
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@ button{
     background-color: transparent;
     fill: var(--light-grey);
     opacity: 50%;
+   
 }
 button:hover{
     opacity: 100%;
@@ -21,7 +22,9 @@ button:hover{
    
    
 }
-
+    svg{
+        fill: var(--grey);
+    }
     .gamesDrop:hover svg {
             
         fill: white ;
@@ -52,7 +55,7 @@ h3{
 .img-container{
     border: 0.5px solid #c9c9c9;
     width: 100%;
-    height: 100%;
+    height: 100%;  
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -62,7 +65,6 @@ h3{
 
 .links-dropped{
     width: 100%;
-
     padding: 60px;
     display: flex;
     flex-direction: row;
@@ -78,4 +80,44 @@ h3{
     bottom: 68px;
     left: 67%;
 }
+img{
+height: 60px;
 
+}
+.nLineUp{
+width: 200px;
+}
+
+.listDrop{
+    position: relative;
+    bottom: 50px;
+    
+}
+
+
+.topWaves{
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: white;
+    height: 40px;
+    width: 1920px;
+    background-color: var(--nint-red);
+}
+.topWaves svg{
+    fill: white;
+   
+
+}
+.kBHRbP {
+    position: absolute;
+    width: 140%;
+    height: 14px;
+    background-size: auto 14px;
+    background-repeat: repeat-x;
+    z-index: 1;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDVweCIgaGVpZ2h0PSIxNHB4IiB2aWV3Qm94PSIwIDAgNDUgMTQiIHZlcnNpb249IjEuMSIKICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT5TdG9yZWZyb250LWF3bmluZy1wYXR0ZXJuPC90aXRsZT4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJTdG9yZWZyb250LWF3bmluZy1wYXR0ZXJuIiBmaWxsPSIjRTYwMDEyIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8cGF0aCBkPSJNNDUsMCBMMCwwIEwwLDEzLjc3MzY4IEMxLjMzMzAyMDAxLDEzLjgzNzcxOTMgMi42NDkxNDAxMywxMy40NTM5MDE4IDMuNzM4NzcsMTIuNjgzMzUgTDE5LjI4NDQ4LDEuNjI4NjYgQzIxLjM2NjIzOTQsMC4xNDgzMTg1OTggMjQuMTU3MDEwNiwwLjE0ODMxODU5OCAyNi4yMzg3NywxLjYyODY2IEw0MS43ODQ0OCwxMi42ODMzNSBDNDIuNzI4MzU2MywxMy4zNTAwNDM4IDQzLjg0NTI4NSwxMy43Mjg3NzYgNDUsMTMuNzczNjggTDQ1LDAgWiIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);
+   
+}
