@@ -1,0 +1,16 @@
+
+
+    <div class="container-news" [ngClass]=" isBig ? 'big' : '' ">
+        <div class="img-news"> <img src="{{card.image}}" alt="NewsNintendo"> </div>
+        
+        <div class="date-news">{{card.date | date: 'dd/MM/yy'}}</div>
+
+        <div class="title-news"> <h3>{{card.titolo}}</h3> </div>
+
+        <div class="description-news"> <p>{{card.description}}</p> </div>
+            
+        <div class="read-more"> <a href="#"> <h6>{{card.readMore}}</h6> </a></div>
+    </div>
+
+
+

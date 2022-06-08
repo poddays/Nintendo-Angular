@@ -1,0 +1,50 @@
+*{
+    text-decoration: none;
+}
+
+.character-content{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+a{
+    display: flex;
+    justify-content: center;
+    position: relative;    
+}
+
+
+.h5-character{
+    color: var(--grey);
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.bk-image{
+    z-index: 0;
+    position: absolute;
+}
+
+.character-container{
+    border-radius: 5px;
+    width: 262px;
+    overflow: hidden;
+    position: relative;
+}
+
+.character-image{
+    z-index: 0;
+}
+
+
+.character-image img:hover{
+    transition: 0.5s;
+    transform: scale(1.1,1.1);
+    overflow: hidden;
+}
+
+a:hover .bk-image img{
+    transition: 0.4s;
+    width: 262px;
+}

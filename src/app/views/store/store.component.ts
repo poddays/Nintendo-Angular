@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
-
+import { IStoreCard } from '../../models/interface-store-card';
+import { storeCard } from "../../models/storeCard";
 @Component({
-  selector: 'app-store',
+  selector: 'nint-store',
   templateUrl: './store.component.html',
   styleUrls: ['./store.component.css']
 })
 export class StoreComponent implements OnInit {
-  label="Log in or create an account "
-
-
+  arrStoreCard:IStoreCard[] = storeCard;
+ smallCard:boolean = false
   constructor() { }
 
   ngOnInit(): void {

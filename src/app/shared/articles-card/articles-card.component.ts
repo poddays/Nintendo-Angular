@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ArticlesCard } from "../../models/interface-article-card";
 
 @Component({
   selector: 'nint-articles-card',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./articles-card.component.css']
 })
 export class ArticlesCardComponent implements OnInit {
+  @Input() card!: ArticlesCard;
+  @Input() isBig: boolean = false;
+ 
 
-  constructor() { }
-
+  constructor() { 
+  }
+  
   ngOnInit(): void {
+    
   }
 
 }

@@ -20,6 +20,8 @@ export class ButtonComponent implements OnInit {
   }
 
  @Input() label!:string;
+ @Input() iconUrl!:string;
+ 
 
 
   

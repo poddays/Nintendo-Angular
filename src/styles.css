@@ -1,7 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
 :root{
     --nint-red:#e60012;
     --nint-dark-red: rgb(172, 0, 13);
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --nint-red:#e60012;
+    --nint-darkRed:rgb(165, 5, 18);
+
     --nint-blue: #3946a0;
     --main-black:#242424;
     --grey: #484848;
