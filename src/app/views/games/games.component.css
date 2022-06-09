@@ -99,6 +99,7 @@
     border: 3px solid #969696;
     border-radius: 5px;
     font-weight: 700;
+    appearance: none;
 }
 
 .main-container{
@@ -106,13 +107,13 @@
 }
 
 .filter-bar{
-    width: 4000px;
+    width: 1000px;
     padding: 20px;
     background-color: #484848;
 }
 
 .cards-container{
-    
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     
@@ -172,11 +173,29 @@
     font-size: 24px;
     padding: 40px;
     text-decoration: none;
-    border: 1px solid ;
+    border: 1px solid rgb(190, 190, 190);
+    
     border-radius: 5px;
     font-weight: 600;
     display: flex;
     align-items: center;
+    color: var(--grey);
+}
+
+.displayNone{
+    display: none;
+}
+
+.freccia-su{
+    transition: 0.2s;
+    transform: rotate(180deg);
+    
+}
+
+.freccia-giu{
+    transition: 0.2s;
+    transform: rotate(0deg);
+    
 }
 
 

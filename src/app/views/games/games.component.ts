@@ -10,12 +10,21 @@ import { CardsService } from '../../views/services/cards.service';
   styleUrls: ['./games.component.css']
 })
 export class GamesComponent implements OnInit {
-  cards: ICard[] = []
-
-  constructor(private cardService: CardsService) { }
+  cards: ICard[] = [];
+  changeArrow = true;
+  
+  constructor(private cardService: CardsService) { 
+     
+  }
+  totalCard: ICard[] = this.cardService.getAll();
 
   ngOnInit(): void {
-   this.cards = this.cardService.getAll()
+   this.cards = this.cardService.getAll().slice(0, 40);
+         
+  }
+
+  openAll(){
+    this.cards = this.cardService.getAll();    
   }
 
 }
