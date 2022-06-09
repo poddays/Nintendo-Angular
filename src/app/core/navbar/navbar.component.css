@@ -44,11 +44,7 @@ h3{
     transition: 0.2s;
     color: var(--nint-red);
 }
-.freccia-su{
-    transition: 0.2s;
-    transform: rotate(180deg);
-    
-}
+
  .link-row-red{
     color:  var(--nint-red);
 }
@@ -58,7 +54,11 @@ h3{
     transform: rotate(0deg);
     
 }
-
+.freccia-su{
+    transition: 0.2s;
+    transform: rotate(180deg);
+    
+}
 
 .dropDown{
     background-color: white;

@@ -103,20 +103,19 @@
 }
 
 .main-container{
-    display: flex;
+    display: flex;    
 }
 
 .filter-bar{
-    width: 1000px;
     padding: 20px;
-    background-color: #484848;
+    position: sticky;
+   margin-left: 60px;
 }
 
 .cards-container{
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 
 .card-container{

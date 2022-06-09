@@ -1,36 +1,97 @@
-h1{
-    font-family: 'nintendo-font', 'arial', sans-serif;
+.filter-bar-container{
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  background-color: #EFEFEF;
+  padding: 20px;
+  font-size: 17px; 
+  gap: 10px;
+  overflow-y: scroll;
+  
 }
 
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
+.scroller{
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  
+}
 
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
+.clear-button{
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px;
+}
 
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    overflow: hidden;
-  }
+.clear-button a{
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #3946A0;
+}
 
-  #filterBar{
-       width: 25%;
-       display : grid;
-       align-items: center;
-       background-color: lightgray;
-  }
+.svg-box{
+  background-color: #3946A0; 
+  border-radius: 100%;
+  align-content: center;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
 
- 
+}
 
-   
+.clear-button svg{
+  color: #EFEFEF;
+  margin-right: 0.4px;
+}
+
+.filter-bar{
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+
+}
+
+input[type="checkbox"]{
+  transform: scale(2.5);
+}
+
+.check-box-primary{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+button{
+  width: 100%;
+  background-color: white;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+h3{
+  font-size: 18px;
+  text-align: left;
+}
+
+.freccia-giu{
+  transition: 0.2s;
+  transform: rotate(0deg);
+  
+}
+.freccia-su{
+  transition: 0.2s;
+  transform: rotate(180deg);
+  
+}
