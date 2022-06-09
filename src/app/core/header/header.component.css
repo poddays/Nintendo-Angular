@@ -1,7 +1,9 @@
-header{
+header {
   background-color: white;
-  
+
 }
+
+
 
 .logo {
   background-color: rgb(226, 45, 45);
@@ -175,7 +177,7 @@ input:checked~label>svg {
   position: absolute;
   min-width: 100%;
   border: transparent;
-  z-index: 1000;
+  z-index: 10000;
 
 }
 
@@ -201,14 +203,19 @@ input:checked~label>svg {
 /**/
 #mega-menu {
   background-color: white;
-  margin-top: 5rem;
-  height: 300px;
+  padding-top: 1em;
+  height: 450px;
   width: 100%;
   position: fixed;
   color: rgb(55, 51, 51);
-
-  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  z-index: 1000;
 }
+
+
+
 
 #cross {
   margin-top: 1em;
@@ -235,6 +242,7 @@ input:checked~label>svg {
   font-size: 1.2rem;
   font-weight: 600;
   color: rgb(66, 60, 60);
+
 }
 
 @media (max-width:1000px) {
@@ -258,21 +266,21 @@ input:checked~label>svg {
 }
 
 
-.loginBar{
- position: absolute;
- right: 0;
- top: 104px;
- animation: fadeIn 0.4s;
+.loginBar {
+  position: absolute;
+  right: 0;
+  top: 104px;
+  animation: fadeIn 0.4s;
 
 }
-@keyframes fadeIn{
-  from{
-   right: -2000px;
+
+@keyframes fadeIn {
+  from {
+    right: -2000px;
   }
-  to{
+
+  to {
     right: 0px;
   }
 
 }
-
-
