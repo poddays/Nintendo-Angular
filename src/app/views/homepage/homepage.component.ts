@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit { 
   smallCard:boolean = true;
-
+gogo:boolean = true
   
   constructor() { }
 

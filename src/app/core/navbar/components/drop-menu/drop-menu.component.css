@@ -65,7 +65,7 @@ h3{
 
 .links-dropped{
     width: 100%;
-    padding: 60px;
+   padding-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;

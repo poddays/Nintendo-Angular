@@ -1,0 +1,38 @@
+
+
+.container-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  height: 300px;
+  margin-bottom: 80px;
+   background-image: url('https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_auto/Dev/IS%20Page%20Placeholders/store/bg1');
+}
+.niHiN {
+    position: relative;
+    width: 100%;
+    height: 16px;
+    background-size: auto 16px;
+    background-repeat: repeat-x;
+    z-index: 1;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzRweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgNzQgMTUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+UGF0aDwvdGl0bGU+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iU3RvcmVmcm9udC13YXZlLXBhdHRlcm4iIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik03NCwxNSBDNTYuMzc5MDcsMTQuOTE0NjkgNTUuNDAwMTQsMC45MzY3NiAzNi45ODgxOSwxLjE4NyBDMTguOTIyMjEsMC44MDg2IDE3Ljc3MjE4LDE0LjgwNzc4IDAsMTUgTDAsMCBMNzQsMCBMNzQsMTUgWiIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);
+    ;
+    
+}
+
+.ckVmPuf{
+    position: relative;
+    width: 100%;
+    height: 16px;
+    background-size: auto 16px;
+    background-repeat: repeat-x;
+    z-index: 1;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzRweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgNzQgMTUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+UGF0aDwvdGl0bGU+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iU3RvcmVmcm9udC13YXZlLXBhdHRlcm4iIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik03NCwxNSBDNTYuMzc5MDcsMTQuOTE0NjkgNTUuNDAwMTQsMC45MzY3NiAzNi45ODgxOSwxLjE4NyBDMTguOTIyMjEsMC44MDg2IDE3Ljc3MjE4LDE0LjgwNzc4IDAsMTUgTDAsMCBMNzQsMCBMNzQsMTUgWiIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+
+h3{
+    margin: 0 0 160px 290px;
+}
