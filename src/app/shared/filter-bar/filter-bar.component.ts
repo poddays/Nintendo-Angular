@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {  AfterContentChecked, AfterViewChecked, Component, ElementRef, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+
 import { FilterBar } from '../../views/services/filter-bar.service';
 
 @Component({
@@ -7,15 +8,18 @@ import { FilterBar } from '../../views/services/filter-bar.service';
   styleUrls: ['./filter-bar.component.css']
 })
 
-export class FilterBarComponent implements OnInit {
+export class FilterBarComponent implements OnInit{
   gameType:Array<string> = [];
   characters:Array<string> = [];
-  price: Array<string> = []
+  price: Array<string> = [];  
+  @ViewChild('deal') deal!: ElementRef;
+  
 
   constructor(private filterBar: FilterBar) {
    this.gameType = this.filterBar.gameType
    this.characters = this.filterBar.characters
    this.price = this.filterBar.price
+   
    }
 
   isNntBtnOpened = false;
@@ -33,14 +37,17 @@ export class FilterBarComponent implements OnInit {
  
   checkStatus(buttonStatus : boolean) : boolean{
       return !buttonStatus
-  }
-
-  
+  } 
 
   ngOnInit(): void {
     this.gameType = this.filterBar.gameType.slice(0, 5);
     this.characters = this.filterBar.characters.slice(0, 5);
-    this.price = this.filterBar.price.slice(0, 5);
+    this.price = this.filterBar.price.slice(0, 5);    
+  }    
+
+  checkInput(){
+    this.deal.nativeElement.checked = !this.deal.nativeElement.checked;
+    console.log(this.deal.nativeElement.checked)
   }
 
   showMore(){    

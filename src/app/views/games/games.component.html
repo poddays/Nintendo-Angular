@@ -64,7 +64,7 @@
           </div>
           <div>
             <span>Sort by:</span>
-            <select>
+            <select>              
               <option value="featured">Featured</option>
               <option value="featured">Release date</option>
               <option value="featured">Title (A-Z)</option>
@@ -79,13 +79,16 @@
         </div>
 
       </div>
+      
       <div class="main-container">
         <div class="filter-bar">
           <nint-filter-bar></nint-filter-bar>
         </div>
         
         <div class="new-container">
+          
           <div class="cards-container">
+            
             <div *ngFor="let card of cards" class="card-container">
               <nint-card [card]="card"></nint-card>
             </div>

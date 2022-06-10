@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './views/homepage/homepage.component';
 import { StoreComponent } from './views/store/store.component';
@@ -33,6 +34,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavComponent } from './views/switch/components/nav/nav.component';
 import { SalespartComponent } from './views/switch/components/salespart/salespart.component';
 import { ListComponent } from './core/navbar/components/drop-menu/list/list.component';
+
 
 
 @NgModule({
@@ -73,7 +75,8 @@ import { ListComponent } from './core/navbar/components/drop-menu/list/list.comp
   imports: [
     BrowserModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -102,30 +102,42 @@
     appearance: none;
 }
 
+.featured{
+    background-color: #484848;
+}
+
 .main-container{
-    display: flex;    
+    display: flex;
+       
 }
 
 .filter-bar{
     padding: 20px;
-    position: sticky;
+    
    margin-left: 60px;
+   top: 6px;
+}
+
+.filter-bar-nav{
+    display: flex;
+    width: 100%;
+    background-color: #EFEFEF;
+    flex-wrap: wrap;
+    
 }
 
 .cards-container{
     padding: 0px 10px 10px 10px;
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap; 
+    gap: 40px;  
 }
-
-.card-container{
-    padding: 20px;
-}
-
 
 .new-container{
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    width: 100%;
 }
 
 .button{
