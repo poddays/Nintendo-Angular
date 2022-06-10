@@ -1,83 +1,223 @@
-
-<div id="filterBar">
-    <div id="clearbox">
-        <button id="filterC" value="reset">Clear all</button>
+<div class="filter-bar-container">
+  <div class="scroller">
+    <div class="clear-button">
+      <a href="">
+        <span class="CancelLinkstyles__IconContainer-sc-119db0p-1 kburUn icon-container">
+          <div class="svg-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="10" role="presentation" alt=""
+              data-testid="XIcon" size="14" color="currentColor">
+              <path fill="currentColor"
+                d="M32 4.53L27.47 0 16 11.47 4.53 0 0 4.53 11.47 16 0 27.47 4.53 32 16 20.53 27.47 32 32 27.47 20.53 16 32 4.53z">
+              </path>
+            </svg>
+          </div>
+        </span>
+        Clear all</a>
     </div>
-    <div id="subConteiner">
-        <div id="rigAccord" class="panel" >
-            <input type="checkbox" class="check"> Deals <br>
-            <input type="checkbox" class="check"> Demo available <br>
-            <input type="checkbox" class="check"> DLC  <br>
-            <input type="checkbox" class="check"> Game with DLC  
+    <div>
+      <div class="filter-bar">
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Deals</span> <br>
         </div>
-        <button id="nntBtn" (click)="isNntBtnOpened=checkStatus(isNntBtnOpened)" class="accordion">Nintendo Switch Online features</button>
-        <div class="panel" *ngIf="isNntBtnOpened">
-            <input type="checkbox" class="check"> Online Play <br>
-           
-            <input type="checkbox" class="check"><span> Save data cloud</span> <br>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Demo available</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>DLC</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Game with DLC</span>
+        </div>
+      </div>
+
+    </div>
+    <div>
+      <button (click)="isNntBtnOpened=checkStatus(isNntBtnOpened)" class="accordion">
+        <h3>Nintendo Switch Online features</h3>
+        <div class="freccetta" [ngClass]="isNntBtnOpened ? 'freccia-su'  : 'freccia-giu' ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" role="presentation" alt=""
+            data-testid="ChevronDownIcon" size="14" color="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
+              d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path>
+          </svg>
+        </div>
+      </button>
+      <div class="filter-bar" *ngIf="isNntBtnOpened">
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Online Play</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Save Data Cloud</span> <br>
+        </div>
+
+
+      </div>
+    </div>
+    <div>
+      <button (click)="platBtn=checkStatus(platBtn)" class="accordion">
+        <h3>Platform</h3>
+        <div class="freccetta" [ngClass]="platBtn ? 'freccia-su'  : 'freccia-giu' ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" role="presentation" alt=""
+            data-testid="ChevronDownIcon" size="14" color="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
+              d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path>
+          </svg>
+        </div>
+      </button>
+      <div class="filter-bar" *ngIf="platBtn">
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Nintendo switch</span> <br>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <button (click)="gameBtn=checkStatus(gameBtn)" class="accordion">
+        <h3>Game type</h3>
+        <div class="freccetta" [ngClass]="gameBtn ? 'freccia-su'  : 'freccia-giu' ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" role="presentation" alt=""
+            data-testid="ChevronDownIcon" size="14" color="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
+              d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path>
+          </svg>
+        </div>
+      </button>
+      <div class="filter-bar" *ngIf="gameBtn">
+        <div *ngFor="let game of gameType">
+          <div class="check-box-primary">
+            <input type="checkbox"><span>{{game}}</span> <br>
+          </div>
+        </div>
+        <p (click)="showMore()" *ngIf="!showLess">Show more</p>
+        <p (click)="showLessFunction()" *ngIf="showLess">Show less</p>
+
+
+      </div>
+    </div>
+    <div>
+      <button (click)="editBtn=checkStatus(editBtn)" class="accordion">
+        <h3>Edition</h3>
+        <div class="freccetta" [ngClass]="editBtn ? 'freccia-su'  : 'freccia-giu' ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" role="presentation" alt=""
+            data-testid="ChevronDownIcon" size="14" color="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
+              d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path>
+          </svg>
+        </div>
+      </button>
+      <div class="filter-bar" *ngIf="editBtn">
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Digital</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Physical</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Special Edition</span> <br>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <button (click)="aviBtn=checkStatus(aviBtn)" class="accordion">
+        <h3>Character or series</h3>
+        <div class="freccetta" [ngClass]="aviBtn ? 'freccia-su'  : 'freccia-giu' ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" role="presentation" alt=""
+            data-testid="ChevronDownIcon" size="14" color="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
+              d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path>
+          </svg>
+        </div>
+      </button>
+      <div class="filter-bar" *ngIf="aviBtn">
+        <div class="check-box-primary" *ngFor="let character of characters">
+          <input type="checkbox"><span>{{character}}</span> <br>
+        </div>
+        <p (click)="showMoreCharacters()" *ngIf="!showCharacters">Show more</p>      
+      <p (click)="showLessCharacters()" *ngIf="showCharacters">Show less</p>
+      </div>
       
-            <input type="checkbox" class="check"> Smarthphone App
-        </div>
-        <button id="platBtn" (click)="platBtn=checkStatus(platBtn)"  class="accordion">Platform</button>
-        <div class="panel" *ngIf="platBtn">
-            <input type="checkbox" class="check"> Nintendo Switch 
-        </div>
-        <button  id="aviBtn" (click)="aviBtn=checkStatus(aviBtn)"class="accordion">Available</button>
-        <div class="panel" *ngIf="aviBtn">
-            <input type="checkbox" class="check"> available now <br>
-            <input type="checkbox" class="check"> coming soon  <br>
-            <input type="checkbox" class="check"> new release <br>
-            <input type="checkbox" class="check"> pre-order
-        </div>
-        <button id="gameBtn" (click)="gameBtn=checkStatus(gameBtn)" class="accordion">Game Type</button>
-        <div class="panel" *ngIf="gameBtn">
-            <input type="checkbox" class="check"> adventure <br>
-            <input type="checkbox" class="check"> action <br>
-            <input type="checkbox" class="check"> arcade <br>
-            <input type="checkbox" class="check"> board game <br>
-            <input type="checkbox" class="check"> education <br>
-            <p>show more</p>
-        </div>
-        <button id="editBtn" (click)="editBtn=checkStatus(editBtn)" class="accordion">Edition</button>
-        <div class="panel" *ngIf="editBtn"> 
-            <input type="checkbox" class="check"> digital <br>
-            <input type="checkbox" class="check"> physical <br>
-            <input type="checkbox" class="check"> special edition <br>
-        </div>
-        <button id="seriesBtn" (click)="seriesBtn=checkStatus(seriesBtn)" class="accordion">Character or series</button>
-        <div class="panel" *ngIf="seriesBtn">
-            <input type="checkbox" class="check"> animal crossing <br>
-            <input type="checkbox" class="check"> donkey kong <br>
-            <input type="checkbox" class="check"> fire emblement <br>
-            <input type="checkbox" class="check"> kirby <br>
-            <input type="checkbox" class="check"> link <br>
-            <p>show more</p>
-        </div>
-        <button id="priceBtn" (click)="priceBtn=checkStatus(priceBtn)" class="accordion">Price</button>
-        <div class="panel" *ngIf="priceBtn">
-            <input type="checkbox" class="check"> free to start <br>
-            <input type="checkbox" class="check"> $0 - $9,99 <br>
-            <input type="checkbox" class="check"> $0 - $4,99 <br>
-            <input type="checkbox" class="check"> $10 - $19,99 <br>
-            <input type="checkbox" class="check"> $20 - $39,99 <br>
-            <p>show more</p>
-        </div>
-        <button id="ratingBtn" (click)="ratingBtn =checkStatus(ratingBtn)" class="accordion">ESRB Rating</button>
-        <div class="panel" *ngIf="ratingBtn">
-            <input type="checkbox" class="check"> e-rating <br>
-            <input type="checkbox" class="check"> e10-rating <br>
-            <input type="checkbox" class="check"> t-rating <br>
-            <input type="checkbox" class="check"> m-rating <br>
-            <input type="checkbox" class="check"> rp-rating <br>
-            <p>show more</p>
-        </div>
-        <button id="playerBtn" (click)="playerBtn=checkStatus(playerBtn)" class="accordion">No.of players</button>
-        <div class="panel" *ngIf="playerBtn">
-            <input type="checkbox" class="check"> 2+ <br>
-            <input type="checkbox" class="check"> 3+ <br>
-            <input type="checkbox" class="check"> 4+<br>
-            <input type="checkbox" class="check"> single player radio
-        </div>
     </div>
-</div>
+    <div>
+      <button (click)="priceBtn=checkStatus(priceBtn)" class="accordion">
+        <h3>Price</h3>
+        <div class="freccetta" [ngClass]="priceBtn ? 'freccia-su'  : 'freccia-giu' ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" role="presentation" alt=""
+            data-testid="ChevronDownIcon" size="14" color="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
+              d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path>
+          </svg>
+        </div>
+      </button>
+      <div class="filter-bar" *ngIf="priceBtn">
+        <div class="check-box-primary" *ngFor="let p of price">
+          <input type="checkbox"><span>{{p}}</span> <br>
+        </div>
+        <p (click)="showMorePrice()" *ngIf="!showPrice">Show more</p>      
+      <p (click)="showLessPrice()" *ngIf="showPrice">Show less</p>
+        
 
+      </div>
+    </div>
+    <div>
+      <button (click)="ratingBtn=checkStatus(ratingBtn)" class="accordion">
+        <h3>ESRB Rating</h3>
+        <div class="freccetta" [ngClass]="ratingBtn ? 'freccia-su'  : 'freccia-giu' ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" role="presentation" alt=""
+            data-testid="ChevronDownIcon" size="14" color="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
+              d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path>
+          </svg>
+        </div>
+      </button>
+      <div class="filter-bar" *ngIf="ratingBtn">
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Everyone</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Everyone +10</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Teen</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Mature</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Rating pending</span> <br>
+        </div>
+
+
+      </div>
+    </div>
+    <div>
+      <button (click)="playerBtn=checkStatus(playerBtn)" class="accordion">
+        <h3>No. of players</h3>
+        <div class="freccetta" [ngClass]="playerBtn ? 'freccia-su'  : 'freccia-giu' ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="14" role="presentation" alt=""
+            data-testid="ChevronDownIcon" size="14" color="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
+              d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path>
+          </svg>
+        </div>
+      </button>
+      <div class="filter-bar" *ngIf="playerBtn">
+        <div class="check-box-primary">
+          <input type="checkbox"><span>2+</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>3+</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>4+</span> <br>
+        </div>
+        <div class="check-box-primary">
+          <input type="checkbox"><span>Single Player</span> <br>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
