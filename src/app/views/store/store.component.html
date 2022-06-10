@@ -1,29 +1,34 @@
-
 <section class="red-section">
-    <!--Immagine SVG Cappello di Mario e scritta Nintendo-->
-    <div class="logo-container">
-        <div class="store-logo">
-            <img src="../../../assets/svg/myNintendoStore.svg" alt="">
-        </div>
+  <!--Immagine SVG Cappello di Mario e scritta Nintendo-->
+  <div class="logo-container">
+    <div class="store-logo">
+      <img src="../../../assets/svg/myNintendoStore.svg" alt="">
     </div>
-    <nint-big-card-store></nint-big-card-store>
+  </div>
+  <nint-big-card-store></nint-big-card-store>
 </section>
 <section class="grey-section">
-    <div id="ondina"><!--Creazione ondine background Javascript--></div>
-    <img class="bg-grey"src="https://assets.nintendo.com/image/upload/dpr_auto,f_auto,q_auto:best/v1/Dev/IS%20Page%20Placeholders/store/bg1" alt="">
-    <div id="ondina-white"><!--Creazione ondine background Javascript--></div> 
-    <section class="item-link"> 
-        <div class="storeCardContainer">
-            <div class="storeCard" *ngFor="let card of arrStoreCard">
-                <nint-store-card [storeCard] = "card"></nint-store-card>
-            </div>
-        </div>
-    </section>
+  <div id="ondina">
+    <!--Creazione ondine background Javascript-->
+  </div>
+  <img class="bg-grey"
+    src="https://assets.nintendo.com/image/upload/dpr_auto,f_auto,q_auto:best/v1/Dev/IS%20Page%20Placeholders/store/bg1"
+    alt="">
+  <div id="ondina-white">
+    <!--Creazione ondine background Javascript-->
+  </div>
+  <section class="item-link">
+    <div class="storeCardContainer">
+      <div class="storeCard" *ngFor="let card of arrStoreCard">
+        <nint-store-card [storeCard]="card"></nint-store-card>
+      </div>
+    </div>
+  </section>
 
-<section class="caroselSection">
+  <section class="caroselSection">
     <h1 class="titleShop">New From Nintendo</h1>
     <div class="carosello">
-        <nint-carosello [smallCard]="smallCard"></nint-carosello>
+      <nint-carosello [smallCard]="smallCard"></nint-carosello>
     </div>
-    
-</section>
+
+  </section>

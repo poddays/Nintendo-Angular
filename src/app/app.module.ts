@@ -33,6 +33,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavComponent } from './views/switch/components/nav/nav.component';
 import { SalespartComponent } from './views/switch/components/salespart/salespart.component';
 import { ListComponent } from './core/navbar/components/drop-menu/list/list.component';
+import { CardHeaderComponent } from './shared/card-header/card-header.component';
 
 
 @NgModule({
@@ -68,7 +69,8 @@ import { ListComponent } from './core/navbar/components/drop-menu/list/list.comp
     HeroComponent,
     NavComponent,
     SalespartComponent,
-    ListComponent
+    ListComponent,
+    CardHeaderComponent
   ],
   imports: [
     BrowserModule,
