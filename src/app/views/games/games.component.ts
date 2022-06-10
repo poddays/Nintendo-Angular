@@ -10,6 +10,7 @@ import { CardsService } from '../../views/services/cards.service';
   styleUrls: ['./games.component.css']
 })
 export class GamesComponent implements OnInit {
+
   cards: ICard[] = [];
   changeArrow = true;
   
@@ -25,6 +26,7 @@ export class GamesComponent implements OnInit {
 
   openAll(){
     this.cards = this.cardService.getAll();    
+
   }
 
 }

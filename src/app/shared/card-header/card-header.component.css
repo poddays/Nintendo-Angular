@@ -1,0 +1,238 @@
+a {
+  color: var(--nint-black);
+}
+
+
+.nint-card {
+  width: 340px;
+  height: 79px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px rgb(177, 171, 171) solid;
+  margin-bottom: 1em;
+
+
+}
+
+.left {
+  width: 50%;
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+h4 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+  color: rgb(72, 69, 69);
+  border-left: solid 2px red;
+}
+
+
+.hardware h3::before {
+  background-color: grey;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+svg {
+  fill: white;
+  margin-top: -1em;
+  height: 45px;
+  width: 45px;
+}
+
+
+.heart {
+  color: var(--nint-red);
+  stroke-width: 3px;
+}
+
+.spark {
+  color: var(--nint-darkRed);
+  stroke-width: 0px;
+  transform-origin: center;
+}
+
+.heart:hover {
+  color: var(--nint-darkRed);
+
+}
+
+.heart:hover .spark {
+
+  animation: sparkAnimation 0.8s;
+}
+
+@keyframes sparkAnimation {
+  0% {
+    transform: scale(0%);
+    stroke-width: 3px
+  }
+
+  10% {
+    transform: scale(90%);
+
+  }
+
+  100% {
+
+    transform: scale(100%);
+
+  }
+}
+
+/* Quando il vuore viene cliccato */
+.heartFilled {
+  fill: var(--nint-red);
+}
+
+.heartFilled:hover {
+  fill: var(--nint-darkRed);
+  stroke: var(--nint-darkRed);
+}
+
+.heartNotFilled {
+  fill: white;
+}
+
+
+
+
+
+
+@keyframes in {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-22px);
+  }
+}
+
+@keyframes out {
+  0% {
+    transform: translateY(-22px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+/* topBar NgCLass */
+.none {
+  background-color: transparent;
+}
+
+.blue {
+  background-color: rgb(0, 97, 251);
+}
+
+.purple {
+  background-color: rgb(111, 0, 203);
+}
+
+
+
+/* Setup card-small  */
+.card-small .nint-card {
+  height: 262.47px;
+
+}
+
+.card-small .top-bar {
+  display: none;
+}
+
+.card-small .price {
+  display: none;
+}
+
+.card-small .heart {
+  display: none;
+}
+
+.card-small .saleTag {
+  display: none;
+}
+
+.card-small .sale {
+  display: none;
+}
+
+.card-small .category {
+  margin-bottom: 20px;
+}
+
+
+/* Setup Sale */
+.sale {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.sale .price {
+  font-size: 12px;
+  color: var(--light-grey);
+  text-decoration: line-through;
+}
+
+
+.saleTag {
+  display: flex;
+  position: relative;
+  right: 10px;
+  bottom: 20px;
+
+}
+
+.saleTag svg {
+  fill: var(--nint-red);
+  height: 20px;
+  width: 20px;
+
+
+}
+
+.saleTag .newPriceContainer {
+  background-color: var(--nint-red);
+  height: 20px;
+  width: 28.77px;
+  position: relative;
+  right: 7px;
+  text-align: center;
+}
+
+.saleTag h3 {
+  color: white;
+  font-size: 12px;
+  position: relative;
+  top: 3px;
+  right: 2px;
+}
+
+.wishListFormat {
+  height: 200px;
+  width: 400px;
+}

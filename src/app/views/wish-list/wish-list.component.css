@@ -1,0 +1,50 @@
+span {
+  padding-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: 0px;
+  margin: 0px 0px 1em;
+  padding: 0px;
+  color: rgb(50, 48, 48)
+}
+
+p {
+  line-height: 1.4;
+  color: rgb(87, 83, 83);
+}
+
+#mi-div {
+
+  box-sizing: border-box;
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+
+
+  margin-bottom: 80px;
+  gap: 10px;
+}
+
+#grey {
+  background-color: #EFEFEF;
+  width: 100%;
+}
+
+#mi-div>span {
+  padding-top: 3.5rem;
+}
+
+#wish {
+  font-weight: 600;
+  color: rgb(87, 83, 83);
+  padding-top: 1em;
+}
+
+.btn {
+  width: 20rem;
+
+  color: #e60012;
+  padding-top: 2.6rem;
+}

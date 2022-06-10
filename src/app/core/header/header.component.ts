@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IheaderCard } from 'src/app/models/headerCards';
+
 
 @Component({
   selector: 'nint-header',
@@ -9,7 +11,11 @@ export class HeaderComponent implements OnInit {
 show:boolean = false;
 display:boolean= true;
 cross:boolean= false;
-showLoginBar:boolean = false
+showLoginBar:boolean = false;
+
+
+
+
   constructor() { }
 
   ngOnInit(): void {
