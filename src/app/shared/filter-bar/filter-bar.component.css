@@ -9,7 +9,6 @@
   overflow-y: scroll;
   
 }
-
 .scroller{
   height: 800px;
   display: flex;
@@ -25,6 +24,11 @@
   margin-bottom: 20px;
 }
 
+.clear-button a:hover .svg-box{
+  
+  background-color: #484848;
+}
+
 .clear-button a{
   text-decoration: none;
   font-weight: 700;
@@ -32,6 +36,10 @@
   align-items: center;
   gap: 10px;
   color: #3946A0;
+}
+
+.clear-button a:hover{
+  color: #484848;
 }
 
 .svg-box{
@@ -45,19 +53,29 @@
 
 }
 
+
+
 .clear-button svg{
   color: #EFEFEF;
   margin-right: 0.4px;
 }
+
+
 
 .filter-bar{
   background-color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  
+  gap: 20px;  
+}
 
+.filter-bar span{
+  cursor: pointer;
+}
+
+.filter-bar p{
+  cursor: pointer;
 }
 
 input[type="checkbox"]{
