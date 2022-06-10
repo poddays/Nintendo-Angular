@@ -34,6 +34,8 @@ import { NavComponent } from './views/switch/components/nav/nav.component';
 import { SalespartComponent } from './views/switch/components/salespart/salespart.component';
 import { ListComponent } from './core/navbar/components/drop-menu/list/list.component';
 import { CardHeaderComponent } from './shared/card-header/card-header.component';
+import { ExploreCollectionsComponent } from './views/store/components/explore-collections/explore-collections.component';
+
 
 
 @NgModule({
@@ -70,7 +72,8 @@ import { CardHeaderComponent } from './shared/card-header/card-header.component'
     NavComponent,
     SalespartComponent,
     ListComponent,
-    CardHeaderComponent
+    CardHeaderComponent,
+    ExploreCollectionsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 .mario-day-card {
-    z-index: 1;
+  position: relative;
+    z-index: 3;
     margin: 0px 231.5px 32px;
   }
   .mario-day-card h2 {
@@ -28,3 +29,5 @@
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
   }
+
+  

@@ -19,6 +19,7 @@ button:hover{
     background-color: transparent;
     width: 120px;
     height: 68px;
+    margin-top: 50px;
    
    
 }
@@ -65,7 +66,7 @@ h3{
 
 .links-dropped{
     width: 100%;
-    padding: 60px;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -91,7 +92,7 @@ width: 200px;
 .listDrop{
     position: relative;
     bottom: 50px;
-    
+    height: 20px;
 }
 
 
@@ -104,11 +105,14 @@ width: 200px;
     fill: white;
     height: 40px;
     width: 1920px;
+    margin-top: 60px;
+    z-index: -1;
+   
     background-color: var(--nint-red);
 }
 .topWaves svg{
     fill: white;
-   
+
 
 }
 .kBHRbP {
