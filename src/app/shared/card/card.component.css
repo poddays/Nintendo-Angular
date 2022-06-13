@@ -1,13 +1,13 @@
 a{
     color: var(--nint-black);
+    
 }
 
 
 .nint-card{
-    width: 259.77px;
+    max-width: 259.77px;    
     height:396.36px;
-   display: flex;
-    
+   display: flex;    
 }
 
 .card-container{
@@ -254,3 +254,9 @@ animation: in 0.3s ease-in-out forwards;
        height: 200px;
        width: 400px;
    }
+
+   @media screen and (max-width: 1200px) {
+    .nint-card{
+        max-width: 230px;
+    }
+  }

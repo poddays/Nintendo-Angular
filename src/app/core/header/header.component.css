@@ -245,7 +245,7 @@ input:checked~label>svg {
 
 }
 
-@media (max-width:1000px) {
+@media (max-width:1200px) {
 
   .buttons,
   .double-border,

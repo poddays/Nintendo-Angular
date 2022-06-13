@@ -130,7 +130,7 @@
     padding: 0px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap; 
-    gap: 40px;  
+    gap: 30px;  
 }
 
 .new-container{
@@ -139,6 +139,8 @@
     padding: 20px;
     width: 100%;
 }
+
+
 
 .button{
     margin-top: 40px;
@@ -209,4 +211,17 @@
     
 }
 
+@media screen and (max-width: 1200px) {
+    .filter-bar {
+      display: none;
+    }
 
+    .cards-container{
+        gap: 10px;
+    }
+
+    .storeFooter{
+        display: flex;
+        flex-direction: column;
+    }
+  }

@@ -12,10 +12,14 @@
     width: 100%;
     background-color: black;
     opacity: 60%;
-    z-index: 20;
-   
-    
+    z-index: 20;    
 }
+
+@media screen and (max-width: 1200px) {
+    nint-navbar {
+      display: none;
+    }
+  }
 
 
 
